@@ -1,267 +1,273 @@
 <dashboard>
-    <assetsUnderManagement>199972578.30000000</assetsUnderManagement>
-    <completedSignups>35670</completedSignups>
-    <fundedUsers>21030</fundedUsers>
-    <goals>
-        <goal>
-            <fullName>Trisha M Clough</fullName>
-            <goalName>Roth IRA</goalName>
-            <goalAmount>200000.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>Todd m Derby</fullName>
-            <goalName>Vacation Fund</goalName>
-            <goalAmount>4000.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>michael t shaffer</fullName>
-            <goalName>Just Save and Invest</goalName>
-            <goalAmount>100.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>Brent W Barton</fullName>
-            <goalName>Vacation Fund</goalName>
-            <goalAmount>2600.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>Aurelio Antonio Navas Gonzalez</fullName>
-            <goalName>House</goalName>
-            <goalAmount>30000.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>Jesse R Beeker</fullName>
-            <goalName>New Car Down Payment</goalName>
-            <goalAmount>10000.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>Arif Mansuri</fullName>
-            <goalName>Education Fund</goalName>
-            <goalAmount>200000.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>Arif Mansuri</fullName>
-            <goalName>House Fund</goalName>
-            <goalAmount>100000.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>Louise P Hines</fullName>
-            <goalName>Vacation Fund</goalName>
-            <goalAmount>2500.00</goalAmount>
-        </goal>
-        <goal>
-            <fullName>Carol Stowe</fullName>
-            <goalName>Wedding</goalName>
-            <goalAmount>5000.00</goalAmount>
-        </goal>
-    </goals>
-    <deposits>
-        <deposit>
-            <fullName>ronald a rubin</fullName>
-            <goalName>boat slush fund</goalName>
-            <amount>10000.00</amount>
-            <description>Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Jacob A Rogers</fullName>
-            <goalName>house money</goalName>
-            <amount>8000.00</amount>
-            <description>Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Parthasarathy Sundaram</fullName>
-            <goalName>Retirement</goalName>
-            <amount>5000.00</amount>
-            <description>Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Robert N Garand</fullName>
-            <goalName>Just Save and Invest</goalName>
-            <amount>25000.00</amount>
-            <description>Initial Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Micky Fokken</fullName>
-            <goalName>Retirement</goalName>
-            <amount>1000.00</amount>
-            <description>Initial Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Catherine E Flynn</fullName>
-            <goalName>Wealth</goalName>
-            <amount>2000.00</amount>
-            <description>Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Alison L Zwerling</fullName>
-            <goalName>Primary</goalName>
-            <amount>1000.00</amount>
-            <description>Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Aaron Didier</fullName>
-            <goalName>Short Term</goalName>
-            <amount>5000.00</amount>
-            <description>Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Lawrence Abas</fullName>
-            <goalName>Just Save and Invest</goalName>
-            <amount>20000.00</amount>
-            <description>Deposit</description>
-        </deposit>
-        <deposit>
-            <fullName>Ioan Ailoae</fullName>
-            <goalName>Retirement</goalName>
-            <amount>2000.00</amount>
-            <description>Initial Deposit</description>
-        </deposit>
-    </deposits>
-    <stats>
-        <daySignups>48</daySignups>
-        <weekSignups>307</weekSignups>
-        <hourSignups>1</hourSignups>
-        <weekDeposits>6723</weekDeposits>
-        <weekWithdrawals>575</weekWithdrawals>
-        <weekDepositSum>4899156.79</weekDepositSum>
-        <weekWithdrawalSum>1018804.31</weekWithdrawalSum>
-    </stats>
-    <users>
-        <user>
-            <name>marshall e cooke</name>
-            <gender>m</gender>
-            <joinTime>1370002009000</joinTime>
-            <initialDeposit>250.00</initialDeposit>
-            <city>Roswell</city>
-            <state>GA</state>
-            <zipCode>30075</zipCode>
-            <age>33</age>
-            <employmentStatus>FULL_TIME</employmentStatus>
-            <employer>FDIC</employer>
-            <occupation>Banking</occupation>
-        </user>
-        <user>
-            <name>Shwetha H M</name>
-            <gender>f</gender>
-            <joinTime>1369999100000</joinTime>
-            <initialDeposit>0</initialDeposit>
-            <city>Bangalore</city>
-            <state>IN</state>
-            <zipCode>56006</zipCode>
-            <age>28</age>
-            <employmentStatus>FULL_TIME</employmentStatus>
-            <employer>Coastal Projects Limited</employer>
-            <occupation>Sr. HR Assistant</occupation>
-        </user>
-        <user>
-            <name>Stephen Schruhl</name>
-            <gender>m</gender>
-            <joinTime>1369991391000</joinTime>
-            <initialDeposit>0</initialDeposit>
-            <city>Las Vegas</city>
-            <state>NV</state>
-            <zipCode>89130</zipCode>
-            <age>19</age>
-            <employmentStatus>PART_TIME</employmentStatus>
-            <employer>Best Buy</employer>
-            <occupation>Retail</occupation>
-        </user>
-        <user>
-            <name>John Woods</name>
-            <gender>m</gender>
-            <joinTime>1369984277000</joinTime>
-            <initialDeposit>0</initialDeposit>
-            <city>Austin</city>
-            <state>TX</state>
-            <zipCode>78751</zipCode>
-            <age>29</age>
-            <employmentStatus>STUDENT</employmentStatus>
-        </user>
-        <user>
-            <name>Sudhakar Subbella</name>
-            <gender>m</gender>
-            <joinTime>1369983461000</joinTime>
-            <initialDeposit>0</initialDeposit>
-            <city>Glendale</city>
-            <state>CA</state>
-            <zipCode>91202</zipCode>
-            <age>33</age>
-            <employmentStatus>FULL_TIME</employmentStatus>
-            <employer>Nestle</employer>
-            <occupation>IT</occupation>
-        </user>
-        <user>
-            <name>Nicholas A Karwisch</name>
-            <gender>m</gender>
-            <joinTime>1369980970000</joinTime>
-            <initialDeposit>0</initialDeposit>
-            <city>Rock Hill</city>
-            <state>SC</state>
-            <zipCode>29732</zipCode>
-            <age>24</age>
-            <employmentStatus>FULL_TIME</employmentStatus>
-            <employer>Infinisource</employer>
-            <occupation>Client Fulfillment Specialist</occupation>
-        </user>
-        <user>
-            <name>Jonathan C Eck</name>
-            <gender>m</gender>
-            <joinTime>1369978877000</joinTime>
-            <initialDeposit>0</initialDeposit>
-            <city>MODESTO</city>
-            <state>CA</state>
-            <zipCode>95354</zipCode>
-            <age>29</age>
-            <employmentStatus>FULL_TIME</employmentStatus>
-            <employer>Church</employer>
-            <occupation>Pastor</occupation>
-        </user>
-        <user>
-            <name>Kenneth Parker</name>
-            <gender>m</gender>
-            <joinTime>1369978571000</joinTime>
-            <initialDeposit>2000.00</initialDeposit>
-            <city>Huntington Beach</city>
-            <state>CA</state>
-            <zipCode>92648</zipCode>
-            <age>36</age>
-            <employmentStatus>FULL_TIME</employmentStatus>
-            <employer>loanDepot</employer>
-            <occupation>Mortgage banker</occupation>
-        </user>
-        <user>
-            <name>John B Lawson</name>
-            <gender>m</gender>
-            <joinTime>1369977793000</joinTime>
-            <initialDeposit>0</initialDeposit>
-            <city>Gilbert</city>
-            <state>AZ</state>
-            <zipCode>85295</zipCode>
-            <age>29</age>
-            <employmentStatus>FULL_TIME</employmentStatus>
-            <employer>Sun Lakes Fire District</employer>
-            <occupation>Firefighter</occupation>
-        </user>
-        <user>
-            <name>James L Wilson</name>
-            <gender>m</gender>
-            <joinTime>1369976058000</joinTime>
-            <initialDeposit>250.00</initialDeposit>
-            <city>Pineville</city>
-            <state>KY</state>
-            <zipCode>40977</zipCode>
-            <age>40</age>
-            <employmentStatus>SELF_EMPLOYED</employmentStatus>
-        </user>
-        <user>
-            <name>James L Wilson</name>
-            <gender>m</gender>
-            <joinTime>1369976058000</joinTime>
-            <initialDeposit>250.00</initialDeposit>
-            <city>Pineville</city>
-            <state>KY</state>
-            <zipCode>20194</zipCode>
-            <age>40</age>
-            <employmentStatus>SELF_EMPLOYED</employmentStatus>
-        </user>
-    </users>
+   <assetsUnderManagement>188500527.12000000</assetsUnderManagement>
+   <completedSignups>34864</completedSignups>
+   <fundedUsers>20507</fundedUsers>
+   <goals>
+      <goal>
+         <fullName>Better A Ment</fullName>
+         <goalName>House Fund</goalName>
+         <goalAmount>30000.00</goalAmount>
+         <goalLength>7</goalLength>
+         <initDeposit>50.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Traditional IRA</goalName>
+         <goalAmount>300000.00</goalAmount>
+         <goalLength>28</goalLength>
+      </goal>
+      <goal>
+         <fullName>Firstname G Lastname</fullName>
+         <goalName>Roth IRA</goalName>
+         <goalAmount>500000.00</goalAmount>
+         <goalLength>38</goalLength>
+      </goal>
+      <goal>
+         <fullName>Firstname M Lastname</fullName>
+         <goalName>Vacation Fund</goalName>
+         <goalAmount>6000.00</goalAmount>
+         <goalLength>5</goalLength>
+         <initDeposit>25.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname M Lastname</fullName>
+         <goalName>HSA</goalName>
+         <goalAmount>2000.00</goalAmount>
+         <goalLength>2</goalLength>
+         <initDeposit>50.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname H Lastname</fullName>
+         <goalName>Safety Net</goalName>
+         <goalAmount>5000.00</goalAmount>
+         <goalLength>2</goalLength>
+      </goal>
+      <goal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Columbia</goalName>
+         <goalAmount>20000.00</goalAmount>
+         <goalLength>1</goalLength>
+         <initDeposit>10000.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname K Lastname</fullName>
+         <goalName>Traditional IRA</goalName>
+         <goalAmount>2000000.00</goalAmount>
+         <goalLength>43</goalLength>
+      </goal>
+      <goal>
+         <fullName>Firstname K Lastname</fullName>
+         <goalName>Roth IRA</goalName>
+         <goalAmount>2000000.00</goalAmount>
+         <goalLength>43</goalLength>
+         <initDeposit>200.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Taxes</goalName>
+         <goalAmount>2500.00</goalAmount>
+         <goalLength>1</goalLength>
+         <initDeposit>739.00</initDeposit>
+      </goal>
+   </goals>
+   <deposits>
+      <deposit>
+         <fullName>ment a better</fullName>
+         <goalName>Just Save and Invest</goalName>
+         <amount>10000.00</amount>
+         <description>Initial Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname a Lastname</fullName>
+         <goalName>funds</goalName>
+         <amount>10000.00</amount>
+         <balance>37392.98</balance>
+         <onOffTrack>FINISHED</onOffTrack>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>House Down Payment</goalName>
+         <amount>1000.00</amount>
+         <balance>1520.47</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Traditional IRA</goalName>
+         <amount>2100.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>NO_TARGET</onOffTrack>
+         <description>2013 Tax Year Contribution</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Columbia</goalName>
+         <amount>10000.00</amount>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname A Lastname</fullName>
+         <goalName>Build Wealth</goalName>
+         <amount>8000.00</amount>
+         <balance>19711.76</balance>
+         <onOffTrack>FINISHED</onOffTrack>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>PURCHASE</goalName>
+         <amount>9000.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>NO_TARGET</onOffTrack>
+         <description>Initial Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname P Lastname</fullName>
+         <goalName>BUILD_WEALTH</goalName>
+         <amount>10000.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>NO_TARGET</onOffTrack>
+         <description>Initial Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname A Lastname</fullName>
+         <goalName>Taxes</goalName>
+         <amount>1500.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname C Lastname</fullName>
+         <goalName>BUILD_WEALTH</goalName>
+         <amount>3000.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+         <description>Initial Deposit</description>
+      </deposit>
+   </deposits>
+   <stats>
+      <daySignups>0</daySignups>
+      <weekSignups>15</weekSignups>
+      <hourSignups>0</hourSignups>
+      <weekDeposits>8</weekDeposits>
+      <weekWithdrawals>1</weekWithdrawals>
+      <weekDepositSum>10490.00</weekDepositSum>
+      <weekWithdrawalSum>300.00</weekWithdrawalSum>
+   </stats>
+   <users>
+      <user>
+         <name>ment a better</name>
+         <gender>f</gender>
+         <joinTime>1370470723000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>kdsla</city>
+         <state>CA</state>
+         <zipCode>48971</zipCode>
+         <age>31</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>bet a men</name>
+         <gender>f</gender>
+         <joinTime>1370470338000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>bet</city>
+         <state>CA</state>
+         <zipCode>48793</zipCode>
+         <age>31</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>ment a better</name>
+         <gender>f</gender>
+         <joinTime>1370467770000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>ment</city>
+         <state>CA</state>
+         <zipCode>89439</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>Better A Ment</name>
+         <gender>f</gender>
+         <joinTime>1370465380000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>better</city>
+         <state>CA</state>
+         <zipCode>84301</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdkls k lkfdsj</name>
+         <gender>m</gender>
+         <joinTime>1370441042000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>dkljsaj</city>
+         <state>CA</state>
+         <zipCode>89471</zipCode>
+         <age>33</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdsjkl k kflsdj</name>
+         <gender>m</gender>
+         <joinTime>1370440875000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>kdjfls</city>
+         <state>CA</state>
+         <zipCode>38271</zipCode>
+         <age>33</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fjdklsjkl k jkfslda</name>
+         <gender>m</gender>
+         <joinTime>1370384824000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>kfjlsfds</city>
+         <state>CA</state>
+         <zipCode>89234</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdksl k fldksj</name>
+         <gender>m</gender>
+         <joinTime>1370383655000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>fdkjsl</city>
+         <state>CA</state>
+         <zipCode>83947</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdjskl k lkfdsj</name>
+         <gender>m</gender>
+         <joinTime>1370383265000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>fkdslj</city>
+         <state>CA</state>
+         <zipCode>83749</zipCode>
+         <age>33</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdsjlk k jkflds</name>
+         <gender>m</gender>
+         <joinTime>1370381962000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>fsjkjf</city>
+         <state>CO</state>
+         <zipCode>81239</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+   </users>
 </dashboard>
+hi
