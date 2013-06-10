@@ -1,7 +1,7 @@
 <?php
 
 $xml = simplexml_load_file("dashboard.xml");
-$deposits = $xml->children()>deposits>children();
+$deposits = $xml->children()->deposits->children();
 
 echo "DEPOSIT INFORMATION";
 echo "";
