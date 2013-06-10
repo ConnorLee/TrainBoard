@@ -1,9 +1,5 @@
 <?php
 
-// $xml_string = file_get_contents('dashboard.xml');
-// $xmlObject = new SimpleXMLElement($xml_string);
-// $deposit = $xmlObject->children()->deposits->deposit;
-
 $xml = simplexml_load_file("dashboard.xml");
 $deposits = $xml->children()->deposits->children();
 
@@ -12,7 +8,6 @@ echo "";
 echo("<table>");
 $i = 0;
 foreach($deposits as $deposit)
-//for($i = 0; $i < 10; $i++)
     {
         echo("<tr>");
         echo("<td>");
