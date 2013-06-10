@@ -9,7 +9,7 @@ var DepartureBoard = function (element, options) {
 	element.className += ' departure-board';
 
 	var rowCount = options.rowCount || 1,
-		letterCount = options.letterCount || 25,
+		letterCount = options.letterCount || 41,
 		letter,
 		rowElement;
 	
@@ -31,9 +31,6 @@ var DepartureBoard = function (element, options) {
 
 DepartureBoard.LETTERS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,':()&!?+-";
 
-
-
-
 DepartureBoard.prototype.spin = function () {
 	var me = this;
 	
@@ -41,13 +38,10 @@ DepartureBoard.prototype.spin = function () {
 		(function (i) {
 			window.setTimeout (function () {
 				me._letters[i].spin ();
-			}, 20 * i + Math.random () * 400);
+			}, 10 * i + Math.random () * 200);
 		})(i);
 	}	
 };
-
-
-
 
 DepartureBoard.prototype.setValue = function (value) {
 	if (!(value instanceof Array)) value = [value];
@@ -61,17 +55,11 @@ DepartureBoard.prototype.setValue = function (value) {
 				window.setTimeout (function () {
 					var letterValue = value[r].substr (i, 1) || '';
 					me._letters[r][i].setValue (letterValue);
-				}, 2000 * r + 25 * i + Math.random () * 400);
+				}, 100 * r + 1 * i + Math.random () * 1);
 			})(r, i);
 		}
 	}
 };
-
-
-
-
-
-
 
 
 DepartureBoard.Letter = function () {	
@@ -147,8 +135,6 @@ DepartureBoard.Letter.prototype.setValue = function (value) {
 	if (this._stopAt < 0) this._stopAt = 0;
 	if (!this._interval && this._index != this._stopAt) this.spin (false);
 };
-
-
 
 
 DepartureBoard.Letter.prototype._tick = function () {
