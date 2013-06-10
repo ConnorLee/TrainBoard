@@ -8,6 +8,7 @@
 		<div id="test"></div>
 		<div id="title">
 		      <h1>All Aboard Betterment</h1>
+<<<<<<< HEAD
 		    </div>                
 		
 		<script src="./js/departure-board.js"></script>
@@ -27,11 +28,28 @@
 			[   'Name      type  track    destination', '','Connor Lee  Goal  Vacation  40,000', 'Trisha M Clough    Goal         Roth IRA      $200,000', 'Arif Mansuri       Goal         Education     $50,000', 'Louise P Hines     Deposit      Vacation      $90,000', 'Aaron Didier       Goal         Retirement    $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000',
 			]);
 				
+=======
+		</div>
+		
+		<script src="./js/departure-board.js"></script>
+
+		<script>
+
+			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 35 }); 
+		
+			//Mock HTML 
+			board.setValue ( 
+				 [ 'Name      type  track    destination',
+				 // 'Connor Lee  Goal    Vacation  40,000', 'Trisha M Clough    Goal         Roth IRA      $200,000', 'Arif Mansuri       Goal         Education     $50,000', 'Louise P Hines     Deposit      Vacation      $90,000', 'Aaron Didier       Goal         Retirement    $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000'
+
+				]);
+>>>>>>> 47912041483c175a73181c0af8ca546bedd0b2bb
 			// 
 			// window.setTimeout (function () {
 			//  	board.setValue ('19:42 Sheffield');
 			// }, 12000);
 
+<<<<<<< HEAD
 var myTable = document.getElementById('myTable');
 myTable.rows[15].cells[20].innerHTML = 'Hello';
 
@@ -53,5 +71,24 @@ myTable.rows[15].cells[20].innerHTML = 'Hello';
 </table> -->
 
 
+=======
+		</script>
+		<?php
+			$dom = new DomDocument();
+			$dom -> load("dashboard.xml");
+			echo("<table>");
+			for($i = 0; $i < 10; $i++)
+			{
+				$deposit = $xmlObject->children()->deposits->deposit;
+			    echo("<tr>");
+			    print("<td>Test</td>");
+			    print("<td>Test</td>");
+			    print("<td>Test</td>");
+			    print("<td>Test</td>");
+			    echo("</tr>");	
+			}
+			echo("</table>");
+		?>
+>>>>>>> 47912041483c175a73181c0af8ca546bedd0b2bb
 	</body>
 </html>

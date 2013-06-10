@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <dashboard>
     <assetsUnderManagement>199972578.30000000</assetsUnderManagement>
     <completedSignups>35670</completedSignups>
@@ -265,3 +266,354 @@
         </user>
     </users>
 </dashboard>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboard>
+   <assetsUnderManagement>188500527.12000000</assetsUnderManagement>
+   <completedSignups>34864</completedSignups>
+   <fundedUsers>20507</fundedUsers>
+   <goals>
+      <goal>
+         <fullName>Better A Ment</fullName>
+         <goalName>House Fund</goalName>
+         <goalAmount>30000.00</goalAmount>
+         <goalLength>7</goalLength>
+         <initDeposit>50.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Traditional IRA</goalName>
+         <goalAmount>300000.00</goalAmount>
+         <goalLength>28</goalLength>
+      </goal>
+      <goal>
+         <fullName>Firstname G Lastname</fullName>
+         <goalName>Roth IRA</goalName>
+         <goalAmount>500000.00</goalAmount>
+         <goalLength>38</goalLength>
+      </goal>
+      <goal>
+         <fullName>Firstname M Lastname</fullName>
+         <goalName>Vacation Fund</goalName>
+         <goalAmount>6000.00</goalAmount>
+         <goalLength>5</goalLength>
+         <initDeposit>25.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname M Lastname</fullName>
+         <goalName>HSA</goalName>
+         <goalAmount>2000.00</goalAmount>
+         <goalLength>2</goalLength>
+         <initDeposit>50.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname H Lastname</fullName>
+         <goalName>Safety Net</goalName>
+         <goalAmount>5000.00</goalAmount>
+         <goalLength>2</goalLength>
+      </goal>
+      <goal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Columbia</goalName>
+         <goalAmount>20000.00</goalAmount>
+         <goalLength>1</goalLength>
+         <initDeposit>10000.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname K Lastname</fullName>
+         <goalName>Traditional IRA</goalName>
+         <goalAmount>2000000.00</goalAmount>
+         <goalLength>43</goalLength>
+      </goal>
+      <goal>
+         <fullName>Firstname K Lastname</fullName>
+         <goalName>Roth IRA</goalName>
+         <goalAmount>2000000.00</goalAmount>
+         <goalLength>43</goalLength>
+         <initDeposit>200.00</initDeposit>
+      </goal>
+      <goal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Taxes</goalName>
+         <goalAmount>2500.00</goalAmount>
+         <goalLength>1</goalLength>
+         <initDeposit>739.00</initDeposit>
+      </goal>
+   </goals>
+   <deposits>
+      <deposit>
+         <fullName>ment a better</fullName>
+         <goalName>Just Save and Invest</goalName>
+         <amount>10000.00</amount>
+         <description>Initial Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname a Lastname</fullName>
+         <goalName>funds</goalName>
+         <amount>10000.00</amount>
+         <balance>37392.98</balance>
+         <onOffTrack>FINISHED</onOffTrack>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>House Down Payment</goalName>
+         <amount>1000.00</amount>
+         <balance>1520.47</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Traditional IRA</goalName>
+         <amount>2100.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>NO_TARGET</onOffTrack>
+         <description>2013 Tax Year Contribution</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Columbia</goalName>
+         <amount>10000.00</amount>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname A Lastname</fullName>
+         <goalName>Build Wealth</goalName>
+         <amount>8000.00</amount>
+         <balance>19711.76</balance>
+         <onOffTrack>FINISHED</onOffTrack>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>PURCHASE</goalName>
+         <amount>9000.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>NO_TARGET</onOffTrack>
+         <description>Initial Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname P Lastname</fullName>
+         <goalName>BUILD_WEALTH</goalName>
+         <amount>10000.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>NO_TARGET</onOffTrack>
+         <description>Initial Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname A Lastname</fullName>
+         <goalName>Taxes</goalName>
+         <amount>1500.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+         <description>Deposit</description>
+      </deposit>
+      <deposit>
+         <fullName>Firstname C Lastname</fullName>
+         <goalName>BUILD_WEALTH</goalName>
+         <amount>3000.00</amount>
+         <balance>0.00</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+         <description>Initial Deposit</description>
+      </deposit>
+   </deposits>
+   <withdrawals>
+      <withdrawal>
+         <fullName>Firstname A Lastname</fullName>
+         <goalName>Wedding</goalName>
+         <amount>-1400.00</amount>
+         <balance>2989.22</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Next Year's Taxes</goalName>
+         <amount>-1000.00</amount>
+         <balance>1058.45</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname P Lastname</fullName>
+         <goalName>Build Wealth</goalName>
+         <amount>-1200.00</amount>
+         <balance>1252.12</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Rainy Day</goalName>
+         <amount>-2500.00</amount>
+         <balance>4050.21</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname M Lastname</fullName>
+         <goalName>Retirement</goalName>
+         <amount>-1993.95</amount>
+         <balance>3276.09</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Retirement</goalName>
+         <amount>-1500.00</amount>
+         <balance>25061.87</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname H Lastname</fullName>
+         <goalName>Fun</goalName>
+         <amount>-1762.00</amount>
+         <balance>2850.59</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Formule defensive</goalName>
+         <amount>-3200.00</amount>
+         <balance>4554.77</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Major Purchase</goalName>
+         <amount>-3000.00</amount>
+         <balance>3291.74</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname t Lastname</fullName>
+         <goalName>Rainy Day Part 1</goalName>
+         <amount>-1300.00</amount>
+         <balance>1356.82</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+   </withdrawals>
+   <stats>
+      <daySignups>0</daySignups>
+      <weekSignups>15</weekSignups>
+      <hourSignups>0</hourSignups>
+      <weekDeposits>8</weekDeposits>
+      <weekWithdrawals>1</weekWithdrawals>
+      <weekDepositSum>10490.00</weekDepositSum>
+      <weekWithdrawalSum>300.00</weekWithdrawalSum>
+   </stats>
+   <users>
+      <user>
+         <name>ment a better</name>
+         <gender>f</gender>
+         <joinTime>1370470723000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>kdsla</city>
+         <state>CA</state>
+         <zipCode>48971</zipCode>
+         <age>31</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>bet a men</name>
+         <gender>f</gender>
+         <joinTime>1370470338000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>bet</city>
+         <state>CA</state>
+         <zipCode>48793</zipCode>
+         <age>31</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>ment a better</name>
+         <gender>f</gender>
+         <joinTime>1370467770000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>ment</city>
+         <state>CA</state>
+         <zipCode>89439</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>Better A Ment</name>
+         <gender>f</gender>
+         <joinTime>1370465380000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>better</city>
+         <state>CA</state>
+         <zipCode>84301</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdkls k lkfdsj</name>
+         <gender>m</gender>
+         <joinTime>1370441042000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>dkljsaj</city>
+         <state>CA</state>
+         <zipCode>89471</zipCode>
+         <age>33</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdsjkl k kflsdj</name>
+         <gender>m</gender>
+         <joinTime>1370440875000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>kdjfls</city>
+         <state>CA</state>
+         <zipCode>38271</zipCode>
+         <age>33</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fjdklsjkl k jkfslda</name>
+         <gender>m</gender>
+         <joinTime>1370384824000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>kfjlsfds</city>
+         <state>CA</state>
+         <zipCode>89234</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdksl k fldksj</name>
+         <gender>m</gender>
+         <joinTime>1370383655000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>fdkjsl</city>
+         <state>CA</state>
+         <zipCode>83947</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdjskl k lkfdsj</name>
+         <gender>m</gender>
+         <joinTime>1370383265000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>fkdslj</city>
+         <state>CA</state>
+         <zipCode>83749</zipCode>
+         <age>33</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+      <user>
+         <name>fdsjlk k jkflds</name>
+         <gender>m</gender>
+         <joinTime>1370381962000</joinTime>
+         <initialDeposit>10000.00</initialDeposit>
+         <city>fsjkjf</city>
+         <state>CO</state>
+         <zipCode>81239</zipCode>
+         <age>32</age>
+         <employmentStatus>STUDENT</employmentStatus>
+      </user>
+   </users>
+<<<<<<< HEAD
+</dashboard>
+=======
+</dashboard>
+>>>>>>> 03ec4069fa3b50ad6cc83b460ab7da4e3cbe7b47
+>>>>>>> 47912041483c175a73181c0af8ca546bedd0b2bb
