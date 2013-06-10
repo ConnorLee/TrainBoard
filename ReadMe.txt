@@ -14,4 +14,8 @@ TrainBoardData Needed:     • Current balance for users
 
 This Dashboard will show new customers "Arriving" at Betterment on signup or instance.
 
+<<<<<<< HEAD
 test
+=======
+hi
+>>>>>>> 03ec4069fa3b50ad6cc83b460ab7da4e3cbe7b47
