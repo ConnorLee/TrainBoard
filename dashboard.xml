@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <dashboard>
    <assetsUnderManagement>188500527.12000000</assetsUnderManagement>
    <completedSignups>34864</completedSignups>
@@ -148,6 +149,78 @@
          <description>Initial Deposit</description>
       </deposit>
    </deposits>
+   <withdrawals>
+      <withdrawal>
+         <fullName>Firstname A Lastname</fullName>
+         <goalName>Wedding</goalName>
+         <amount>-1400.00</amount>
+         <balance>2989.22</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Next Year's Taxes</goalName>
+         <amount>-1000.00</amount>
+         <balance>1058.45</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname P Lastname</fullName>
+         <goalName>Build Wealth</goalName>
+         <amount>-1200.00</amount>
+         <balance>1252.12</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Rainy Day</goalName>
+         <amount>-2500.00</amount>
+         <balance>4050.21</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname M Lastname</fullName>
+         <goalName>Retirement</goalName>
+         <amount>-1993.95</amount>
+         <balance>3276.09</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Retirement</goalName>
+         <amount>-1500.00</amount>
+         <balance>25061.87</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname H Lastname</fullName>
+         <goalName>Fun</goalName>
+         <amount>-1762.00</amount>
+         <balance>2850.59</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Formule defensive</goalName>
+         <amount>-3200.00</amount>
+         <balance>4554.77</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>Major Purchase</goalName>
+         <amount>-3000.00</amount>
+         <balance>3291.74</balance>
+         <onOffTrack>OFF_TRACK</onOffTrack>
+      </withdrawal>
+      <withdrawal>
+         <fullName>Firstname t Lastname</fullName>
+         <goalName>Rainy Day Part 1</goalName>
+         <amount>-1300.00</amount>
+         <balance>1356.82</balance>
+         <onOffTrack>ON_TRACK</onOffTrack>
+      </withdrawal>
+   </withdrawals>
    <stats>
       <daySignups>0</daySignups>
       <weekSignups>15</weekSignups>
@@ -270,4 +343,3 @@
       </user>
    </users>
 </dashboard>
-hi
