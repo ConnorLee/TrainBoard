@@ -35,7 +35,7 @@
 
 		<script>
 
-			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 35 }); 
+			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 40 }); 
 		
 			//Mock HTML 
 			board.setValue ( 
@@ -73,6 +73,7 @@ myTable.rows[15].cells[20].innerHTML = 'Hello';
 
 =======
 		</script>
+<<<<<<< HEAD
 		<?php
 			$dom = new DomDocument();
 			$dom -> load("dashboard.xml");
@@ -90,5 +91,32 @@ myTable.rows[15].cells[20].innerHTML = 'Hello';
 			echo("</table>");
 		?>
 >>>>>>> 47912041483c175a73181c0af8ca546bedd0b2bb
+=======
+		<div id = "deposits">
+			<table>
+		        <thead>
+		            <tr>
+		                <th>Name</th>
+		                <th>Goal</th>
+		                <th>Amount</th>
+		                <th>Description</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <?php
+		                foreach($Deposits as $row)
+		                {
+		                    print("<tr>");
+		                    print("<td>{$row["fullName"]}</td>");
+		                    print("<td>{$row["goalName"]}</td>");
+		                    print("<td>{$row["amount"]}</td>");
+		                    print("<td>{$row["description"]}</td>");
+		                    print("</tr>");
+		                }
+		            ?>
+		        </tbody>
+	        </table>
+	</div>
+>>>>>>> 7b9780be04d81b2ab9aabcc9724a0c841c727335
 	</body>
 </html>
