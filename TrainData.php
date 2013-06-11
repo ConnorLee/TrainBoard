@@ -8,12 +8,11 @@ for($i = 0; $i < 3; $i++)
 {
     $chart = array(
         "fullName" => (string)$deposits[$i]->fullName,
-        "description" => "Deposit",
         "goalName" => (string)$deposits[$i]->goalName,
-        "goalAmount" => (string)$deposits[$i]->goalAmount,
+        "goalAmount" => (string)round($deposits[$i]->goalAmount),
         "goalLength" => (string)$deposits[$i]->goalLength,
-        "amount" => (string)$deposits[$i]->amount,
-        "balance" => (string)$deposits[$i]->balance,
+        "amount" => (string)round($deposits[$i]->amount),
+        "balance" => (string)round($deposits[$i]->balance),
         "onOffTrack" => (string)$deposits[$i]->onOffTrack,
         );
     $mostRecentThreeDeposits[$i]=$chart;
@@ -25,12 +24,11 @@ for($i = 0; $i < 3; $i++)
 {
     $chart = array(
         "fullName" => (string)$withdrawals[$i]->fullName,
-        "description" => "Withdrawal",
         "goalName" => (string)$withdrawals[$i]->goalName,
-        "goalAmount" => (string)$withdrawals[$i]->goalAmount,
+        "goalAmount" => (string)round($withdrawals[$i]->goalAmount),
         "goalLength" => (string)$withdrawals[$i]->goalAmount,
-        "amount" => (string)$withdrawals[$i]->amount,
-        "balance" => (string)$withdrawals[$i]->balance,
+        "amount" => (string)round($withdrawals[$i]->amount),
+        "balance" => (string)round($withdrawals[$i]->balance),
         "onOffTrack" => (string)$withdrawals[$i]->onOffTrack,
         );
     $mostRecentThreeWithdrawals[$i]=$chart;
@@ -42,11 +40,10 @@ for($i = 0; $i < 3; $i++)
 {
     $chart = array(
         "fullName" => (string)$goals[$i]->fullName,
-        "description" => "Goal",
         "goalName" => (string)$goals[$i]->goalName,
-        "goalAmount" => (string)$goals[$i]->goalAmount,
+        "goalAmount" => (string)round($goals[$i]->goalAmount),
         "goalLength" => (string)$goals[$i]->goalLength,
-        "amount" => (string)$goals[$i]->initDeposit,
+        "amount" => (string)round($goals[$i]->initDeposit),
         "balance" => NULL,
         "onOffTrack" => NULL,
         );
@@ -54,10 +51,20 @@ for($i = 0; $i < 3; $i++)
 }
 
 // Combine into one table
-$transactions = array_merge($mostRecentThreeDeposits, $mostRecentThreeWithdrawals);
-$TrainData = array_merge($transactions, $mostRecentThreeGoals);
 
-$file = 'TrainData.json';
-file_put_contents($file, json_encode($TrainData));
+$file = "TrainData.json";
 
+file_put_contents($file, "{\"DepositObject\":");
+
+$fh = fopen($file, 'a') or die("can't open file");
+fwrite($fh, json_encode($mostRecentThreeDeposits));
+fwrite($fh, ",");
+fwrite($fh, "\"WithdrawalObject\":");
+fwrite($fh, json_encode($mostRecentThreeWithdrawals));
+fwrite($fh, ",");
+fwrite($fh, "\"GoalObject\":");
+fwrite($fh, json_encode($mostRecentThreeGoals));
+fwrite($fh, "}");
+
+fclose($fh);
 ?>
