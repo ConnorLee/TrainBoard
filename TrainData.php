@@ -2,22 +2,22 @@
 
 $xml = simplexml_load_file("dashboard.xml");
 
+// Most Recent 3 Deposits
 $deposits = $xml->children()->deposits->children();
 for($i = 0; $i < 3; $i++)
 {
     $chart = array(
         "fullName" => (string)$deposits[$i]->fullName,
+        "description" => "Deposit",
         "goalName" => (string)$deposits[$i]->goalName,
+        "goalAmount" => (string)$deposits[$i]->goalAmount,
+        "goalLength" => (string)$deposits[$i]->goalLength,
         "amount" => (string)$deposits[$i]->amount,
         "balance" => (string)$deposits[$i]->balance,
         "onOffTrack" => (string)$deposits[$i]->onOffTrack,
-        "description" => (string)$deposits[$i]->description,
         );
     $mostRecentThreeDeposits[$i]=$chart;
 }
-echo "DEPOSIT INFORMATION <br>";
-print_r($mostRecentThreeDeposits);
-echo "<br>";
 
 // Most Recent 3 Withdrawals
 $withdrawals = $xml->children()->withdrawals->children();
@@ -25,16 +25,16 @@ for($i = 0; $i < 3; $i++)
 {
     $chart = array(
         "fullName" => (string)$withdrawals[$i]->fullName,
+        "description" => "Withdrawal",
         "goalName" => (string)$withdrawals[$i]->goalName,
+        "goalAmount" => (string)$withdrawals[$i]->goalAmount,
+        "goalLength" => (string)$withdrawals[$i]->goalAmount,
         "amount" => (string)$withdrawals[$i]->amount,
         "balance" => (string)$withdrawals[$i]->balance,
         "onOffTrack" => (string)$withdrawals[$i]->onOffTrack,
         );
     $mostRecentThreeWithdrawals[$i]=$chart;
 }
-echo "<br>WITHDRAWAL INFORMATION<br>";
-print_r($mostRecentThreeWithdrawals);
-echo "<br>";
 
 // Most Recent 3 Goals
 $goals = $xml->children()->goals->children();
@@ -42,15 +42,21 @@ for($i = 0; $i < 3; $i++)
 {
     $chart = array(
         "fullName" => (string)$goals[$i]->fullName,
+        "description" => "Goal",
         "goalName" => (string)$goals[$i]->goalName,
         "goalAmount" => (string)$goals[$i]->goalAmount,
         "goalLength" => (string)$goals[$i]->goalLength,
-        "initDeposit" => (string)$goals[$i]->initDeposit,
+        "amount" => (string)$goals[$i]->initDeposit,
+        "balance" => NULL,
+        "onOffTrack" => NULL,
         );
     $mostRecentThreeGoals[$i]=$chart;
 }
-echo "<br>GOAL INFORMATION <br>";
-print_r($mostRecentThreeGoals);
-echo "<br>";
+
+// Combine into one table
+$transactions = array_merge($mostRecentThreeDeposits, $mostRecentThreeWithdrawals);
+$TrainData = array_merge($transactions, $mostRecentThreeGoals);
+
+echo json_encode($TrainData);
 
 ?>

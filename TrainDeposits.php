@@ -13,6 +13,8 @@ for($i = 0; $i < 3; $i++)
         "onOffTrack" => (string)$deposits[$i]->onOffTrack,
         "description" => (string)$deposits[$i]->description,
         );
-    $mostRecentThreeDeposits[$i]=$chart;
+    $mostRecentDeposits[$i]=$chart;
 }
+
+echo json_encode($mostRecentDeposits);
 ?>

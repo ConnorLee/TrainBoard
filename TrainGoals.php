@@ -11,7 +11,9 @@ for($i = 0; $i < 3; $i++)
         "goalLength" => (string)$goals[$i]->goalLength,
         "initDeposit" => (string)$goals[$i]->initDeposit,
         );
-    $mostRecentThreeGoals[$i]=$chart;
+    $mostRecentGoals[$i]=$chart;
 }
+
+echo json_encode($mostRecentGoals);
 
 ?>

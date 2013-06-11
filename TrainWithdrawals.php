@@ -14,4 +14,6 @@ for($i = 0; $i < 3; $i++)
     $mostRecentWithdrawals[$i]=$chart;
 }
 
+echo json_encode($mostRecentWithdrawals);
+
 ?>
