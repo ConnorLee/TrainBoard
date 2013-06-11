@@ -14,7 +14,7 @@
 
 		<script>
 
-			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 35 }); 
+			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 40 }); 
 		
 			//Mock HTML 
 			board.setValue ( 
@@ -28,21 +28,30 @@
 			// }, 12000);
 
 		</script>
-		<?php
-			$dom = new DomDocument();
-			$dom -> load("dashboard.xml");
-			echo("<table>");
-			for($i = 0; $i < 10; $i++)
-			{
-				$deposit = $xmlObject->children()->deposits->deposit;
-			    echo("<tr>");
-			    print("<td>Test</td>");
-			    print("<td>Test</td>");
-			    print("<td>Test</td>");
-			    print("<td>Test</td>");
-			    echo("</tr>");	
-			}
-			echo("</table>");
-		?>
+		<div id = "deposits">
+			<table>
+		        <thead>
+		            <tr>
+		                <th>Name</th>
+		                <th>Goal</th>
+		                <th>Amount</th>
+		                <th>Description</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <?php
+		                foreach($Deposits as $row)
+		                {
+		                    print("<tr>");
+		                    print("<td>{$row["fullName"]}</td>");
+		                    print("<td>{$row["goalName"]}</td>");
+		                    print("<td>{$row["amount"]}</td>");
+		                    print("<td>{$row["description"]}</td>");
+		                    print("</tr>");
+		                }
+		            ?>
+		        </tbody>
+	        </table>
+	</div>
 	</body>
 </html>
