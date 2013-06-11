@@ -57,6 +57,7 @@ for($i = 0; $i < 3; $i++)
 $transactions = array_merge($mostRecentThreeDeposits, $mostRecentThreeWithdrawals);
 $TrainData = array_merge($transactions, $mostRecentThreeGoals);
 
-echo json_encode($TrainData);
+$file = 'TrainData.json';
+file_put_contents($file, json_encode($TrainData));
 
 ?>
