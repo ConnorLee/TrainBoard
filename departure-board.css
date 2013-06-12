@@ -1,12 +1,6 @@
 
-/*
-	Based upon Jakub Hampl's "Designing a departures board with CSS3".
-	http://gampleman.eu/post/1488470623/designing-a-departures-board-with-css3
-*/
-
 body{
-	background-image: url(bg2.jpg);
-	background-repeat: repeat;
+	background-color: #000000;
 }
 
 
@@ -20,6 +14,8 @@ table {
     border-radius: 0.21em;
     color: #eee;
 	font-family: Helvetica;
+	height: 100%;
+	width: 100%;
 }
 
 
@@ -142,10 +138,8 @@ table {
 	transition: transform linear;
 }
 
-body{
-	background-image: url('bg.jpg');
-	background-repeat: repeat;
-}
+
+
 h1{
    margin-bottom: .5%;
    letter-spacing: .15em;
@@ -162,9 +156,7 @@ thead{
 #title1{
 text-align: center;
 }
-table{
-margin-left: 2%;
-}
+
 
 td {
     padding:  5px 10px;

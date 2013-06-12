@@ -21,10 +21,10 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$deposits[$i]->goalName,
-        "TOTAL DISTANCE" => (string)round($deposits[$i]->goalAmount),
+        "TRIP DISTANCE" => (string)round($deposits[$i]->goalAmount),
         "DURATION" => (string)$deposits[$i]->goalLength,
-        "MILES ADDED" => (string)round($deposits[$i]->amount),
-        "DISTANCE TRAVELED" => (string)round($deposits[$i]->balance),
+        "Δ MILES" => (string)round($deposits[$i]->amount),
+        "PROGRESS" => (string)round($deposits[$i]->balance),
         "STATUS" => $status,
         );
     $mostRecentThreeDeposits[$i]=$chart;
@@ -49,10 +49,10 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$withdrawals[$i]->goalName,
-        "TOTAL DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
+        "TRIP DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
         "DURATION" => (string)$withdrawals[$i]->goalLength,
-        "MILES ADDED" => (string)round($withdrawals[$i]->amount),
-        "DISTANCE TRAVELED" => (string)round($withdrawals[$i]->balance),
+        "Δ MILES" => (string)round($withdrawals[$i]->amount),
+        "PROGRESS" => (string)round($withdrawals[$i]->balance),
         "STATUS" => $status,
         );
     $mostRecentThreeWithdrawals[$i]=$chart;
@@ -68,16 +68,14 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$goals[$i]->goalName,
-        "TOTAL DISTANCE" => (string)round($goals[$i]->goalAmount),
+        "TRIP DISTANCE" => (string)round($goals[$i]->goalAmount),
         "DURATION" => (string)$goals[$i]->goalLength,
-        "MILES ADDED" => (string)round($goals[$i]->initDeposit),
-        "DISTANCE TRAVELED" => "0",
+        "Δ MILES" => (string)round($goals[$i]->initDeposit),
+        "PROGRESS" => "0",
         "STATUS" => "DEPARTED",
-
         );
-    $mostRecentThreeGoals[$i]=$chart;
+        $mostRecentThreeGoals[$i]=$chart;
 }
-
 
 // Split into 3 Objects, each an array of 3 Transactions
 $file = "TrainData.json";
