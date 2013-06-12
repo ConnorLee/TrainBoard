@@ -9,14 +9,23 @@ for($i = 0; $i < 3; $i++)
     $name = (string)$deposits[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
+    if ((string)$deposits[$i]->onOffTrack == "OFF_TRACK") {
+        $status = "DELAYED";
+    } else if ((string)$deposits[$i]->onOffTrack == "ON_TRACK") {
+        $status = "ON TIME";
+    } else if ((string)$deposits[$i]->onOffTrack == "FINISHED") {
+        $status = "ARRIVED";
+    } else {
+        $status = "PENDING";
+    }
     $chart = array(
-        "fullName" => $abbName,
-        "goalName" => (string)$deposits[$i]->goalName,
-        "goalAmount" => (string)round($deposits[$i]->goalAmount),
-        "goalLength" => (string)$deposits[$i]->goalLength,
-        "amount" => (string)round($deposits[$i]->amount),
-        "balance" => (string)round($deposits[$i]->balance),
-        "onOffTrack" => (string)$deposits[$i]->onOffTrack,
+        "NAME" => $abbName,
+        "DESTINATION" => (string)$deposits[$i]->goalName,
+        "TOTAL DISTANCE" => (string)round($deposits[$i]->goalAmount),
+        "DURATION" => (string)$deposits[$i]->goalLength,
+        "MILES ADDED" => (string)round($deposits[$i]->amount),
+        "DISTANCE TRAVELED" => (string)round($deposits[$i]->balance),
+        "STATUS" => $status,
         );
     $mostRecentThreeDeposits[$i]=$chart;
 }
@@ -28,14 +37,23 @@ for($i = 0; $i < 3; $i++)
     $name = (string)$withdrawals[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
+    if ((string)$withdrawals[$i]->onOffTrack == "OFF_TRACK") {
+        $status = "DELAYED";
+    } else if ((string)$withdrawals[$i]->onOffTrack == "ON_TRACK") {
+        $status = "ON TIME";
+    } else if ((string)$withdrawals[$i]->onOffTrack == "FINISHED") {
+        $status = "ARRIVED";
+    } else {
+        $status = "PENDING";
+    }
     $chart = array(
-        "fullName" => $abbName,
-        "goalName" => (string)$withdrawals[$i]->goalName,
-        "goalAmount" => (string)round($withdrawals[$i]->goalAmount),
-        "goalLength" => (string)$withdrawals[$i]->goalLength,
-        "amount" => (string)round($withdrawals[$i]->amount),
-        "balance" => (string)round($withdrawals[$i]->balance),
-        "onOffTrack" => (string)$withdrawals[$i]->onOffTrack,
+        "NAME" => $abbName,
+        "DESTINATION" => (string)$withdrawals[$i]->goalName,
+        "TOTAL DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
+        "DURATION" => (string)$withdrawals[$i]->goalLength,
+        "MILES ADDED" => (string)round($withdrawals[$i]->amount),
+        "DISTANCE TRAVELED" => (string)round($withdrawals[$i]->balance),
+        "STATUS" => $status,
         );
     $mostRecentThreeWithdrawals[$i]=$chart;
 }
@@ -48,13 +66,14 @@ for($i = 0; $i < 3; $i++)
     $lastSpace = strrpos($name, " ");
     $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
     $chart = array(
-        "fullName" => $abbName,
-        "goalName" => (string)$goals[$i]->goalName,
-        "goalAmount" => (string)round($goals[$i]->goalAmount),
-        "goalLength" => (string)$goals[$i]->goalLength,
-        "amount" => (string)round($goals[$i]->initDeposit),
-        "balance" => NULL,
-        "onOffTrack" => NULL,
+        "NAME" => $abbName,
+        "DESTINATION" => (string)$goals[$i]->goalName,
+        "TOTAL DISTANCE" => (string)round($goals[$i]->goalAmount),
+        "DURATION" => (string)$goals[$i]->goalLength,
+        "MILES ADDED" => (string)round($goals[$i]->initDeposit),
+        "DISTANCE TRAVELED" => "0",
+        "STATUS" => "DEPARTED",
+
         );
     $mostRecentThreeGoals[$i]=$chart;
 }
