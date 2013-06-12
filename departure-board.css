@@ -9,12 +9,8 @@ body{
 	background-repeat: repeat;
 }
 
-#title{
-	font-size: 10px;
-	color: white;
-	font-family: 'Times', 'Georgia', 'Lucida Grande';
-}
-.departure-board {
+
+table {
     padding:  0.36em;
     display: inline-block;
 	line-height: 1.3em;
@@ -146,3 +142,73 @@ body{
 	transition: transform linear;
 }
 
+body{
+	background-image: url('/bg.jpg');
+	background-repeat: repeat;
+}
+h1{
+   margin-bottom: .5%;
+   letter-spacing: .15em;
+}
+
+#title1{
+text-align: center;
+}
+table{
+margin-left: 2%;
+}
+
+td {
+    padding:  5px 10px;
+    display: inline-block;
+    background: rgb(30, 30, 30);
+    background: -webkit-gradient(linear, center top, center bottom, 
+      color-stop(0.0, rgba(0,0,0, 1)), 
+      color-stop(0.05, rgba(30,30,30, 1)),  
+      color-stop(1.0, rgba(50, 50, 60, 1)));
+    background: -moz-linear-gradient(270deg, 
+      rgba(0,0,0,1) 0%, 
+      rgba(30, 30, 30, 1) 5%, 
+      rgba(50, 50, 60, 1) 100%);
+    /* border radius */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+ 
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    /* box shadow */
+    -webkit-box-shadow: 
+      inset 0 -1px 0 rgba(50,50,50,0.7), 
+      inset 0 -2px 0 rgba(0,0,0,0.7), 
+      inset 2px 0px 4px rgba(0,0,0,0.9), 
+      inset -2px 0px 4px rgba(0,0,0,0.9), 
+      0 1px 0px rgba(255,255,255,0.2);
+    -moz-box-shadow: 
+      inset 0 -1px 0 rgba(50,50,50,0.7), 
+      inset 0 -2px 0 rgba(0,0,0,0.7), 
+      inset 2px 0px 4px rgba(0,0,0,0.9), 
+      inset -2px 0px 4px rgba(0,0,0,0.9), 
+      0 1px 0px rgba(255,255,255,0.2);
+    box-shadow:
+      inset 0 -1px 0 rgba(50,50,50,0.7), 
+      inset 0 -2px 0 rgba(0,0,0,0.7), 
+      inset 2px 0px 4px rgba(0,0,0,0.9), 
+      inset -2px 0px 4px rgba(0,0,0,0.9), 
+      0 1px 0px rgba(255,255,255,0.2);
+}
+td:before {
+    /* approximation for old browsers */
+    border-top: 1px solid rgb(30, 30, 30);
+    border-top: 1px solid rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    height: 0px;
+    width: 110%;
+    position: relative;
+    left: -9px;
+    top: 11px;
+    content: " ";
+    display: block;
+}

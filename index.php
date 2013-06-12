@@ -5,7 +5,7 @@
 	</head>
 	
 	<body onLoad = "buildHtmlTable()">
-		<h1>All Aboard Betterment</h1>
+		<h1 id = "title1">ALL ABOARD BETTERMENT</h1>
 		<div id="animation"></div>
 
 		<table id="placeholder"></table>
@@ -23,13 +23,13 @@
 		<!-- Old Departure Board -->
 		<script src="./js/departure-board.js"></script>
 		<script>
-			var board = new DepartureBoard (document.getElementById ('animation'), { rowCount: 1, letterCount: 40 }); 
+		// 	var board = new DepartureBoard (document.getElementById ('animation'), { rowCount: 1, letterCount: 40 }); 
 			
-			board.setValue ( 
-				 [ 'Name      type  track    destination',
-				 // 'Connor Lee  Goal    Vacation  40,000', 'Trisha M Clough    Goal         Roth IRA      $200,000', 'Arif Mansuri       Goal         Education     $50,000', 'Louise P Hines     Deposit      Vacation      $90,000', 'Aaron Didier       Goal         Retirement    $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000'
+		// 	board.setValue ( 
+		// 		 [ 'Name      type  track    destination',
+		// 		 // 'Connor Lee  Goal    Vacation  40,000', 'Trisha M Clough    Goal         Roth IRA      $200,000', 'Arif Mansuri       Goal         Education     $50,000', 'Louise P Hines     Deposit      Vacation      $90,000', 'Aaron Didier       Goal         Retirement    $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000'
 
-				]);
-		</script>
+		// 		]);
+		// </script>
 	</body>
 </html>
