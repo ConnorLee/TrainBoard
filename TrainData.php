@@ -6,8 +6,11 @@ $xml = simplexml_load_file("dashboard.xml");
 $deposits = $xml->children()->deposits->children();
 for($i = 0; $i < 3; $i++)
 {
+    $name = (string)$deposits[$i]->fullName;
+    $lastSpace = strrpos($name, " ");
+    $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
     $chart = array(
-        "fullName" => (string)$deposits[$i]->fullName,
+        "fullName" => $abbName,
         "goalName" => (string)$deposits[$i]->goalName,
         "amount" => (string)$deposits[$i]->amount,
         "description" => (string)$deposits[$i]->description,
@@ -21,8 +24,11 @@ print_r($mostRecentThreeDeposits);
 $withdrawals = $xml->children()->withdrawals->children();
 for($i = 0; $i < 3; $i++)
 {
+    $name = (string)$withdrawals[$i]->fullName;
+    $lastSpace = strrpos($name, " ");
+    $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
     $chart = array(
-        "fullName" => (string)$withdrawals[$i]->fullName,
+        "fullName" => $abbName,
         "goalName" => (string)$withdrawals[$i]->goalName,
         "amount" => (string)$withdrawals[$i]->amount,
         "balance" => (string)$withdrawals[$i]->balance,
@@ -38,8 +44,11 @@ print_r($mostRecentThreeWithdrawals);
 $goals = $xml->children()->goals->children();
 for($i = 0; $i < 3; $i++)
 {
+    $name = (string)$goals[$i]->fullName;
+    $lastSpace = strrpos($name, " ");
+    $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
     $chart = array(
-        "fullName" => (string)$goals[$i]->fullName,
+        "fullName" => $abbName,
         "goalName" => (string)$goals[$i]->goalName,
         "goalAmount" => (string)$goals[$i]->goalAmount,
         "goalLength" => (string)$goals[$i]->goalLength,
