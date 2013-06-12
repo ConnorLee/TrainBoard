@@ -3,95 +3,31 @@
 		<title>JavaScript/CSS3 Departure Board</title>
 		<link rel="stylesheet" href="departure-board.css" />
 	</head>
-	
+
 	<body>
 		<div id="test"></div>
 		<div id="title">
 		      <h1>All Aboard Betterment</h1>
-<<<<<<< HEAD
-		    </div>                
-		
-		<script src="./js/departure-board.js"></script>
-		<script>
-
-			// $("#container #hour tr td").html(data.hourSignups);
-   //          $("#container tr td").html(data.daySignups);
-   //          $("#container tr td").html(data.weekSignups);
-   //          $("#container tr td").html(data.fundedUsers);
-		    
-
-			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 35 }); 
-		
-			//Mock HTML - needs to be replaced with XML data 
-			board.setValue ( 
-
-			[   'Name      type  track    destination', '','Connor Lee  Goal  Vacation  40,000', 'Trisha M Clough    Goal         Roth IRA      $200,000', 'Arif Mansuri       Goal         Education     $50,000', 'Louise P Hines     Deposit      Vacation      $90,000', 'Aaron Didier       Goal         Retirement    $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000',
-			]);
-				
-=======
 		</div>
-		
+
 		<script src="./js/departure-board.js"></script>
 
 		<script>
 
 			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 40 }); 
-		
+
 			//Mock HTML 
 			board.setValue ( 
 				 [ 'Name      type  track    destination',
 				 // 'Connor Lee  Goal    Vacation  40,000', 'Trisha M Clough    Goal         Roth IRA      $200,000', 'Arif Mansuri       Goal         Education     $50,000', 'Louise P Hines     Deposit      Vacation      $90,000', 'Aaron Didier       Goal         Retirement    $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000'
 
 				]);
->>>>>>> 47912041483c175a73181c0af8ca546bedd0b2bb
 			// 
 			// window.setTimeout (function () {
 			//  	board.setValue ('19:42 Sheffield');
 			// }, 12000);
 
-<<<<<<< HEAD
-var myTable = document.getElementById('myTable');
-myTable.rows[15].cells[20].innerHTML = 'Hello';
-
 		</script>
-
-<!-- <table id="container">
-      <tr id = "hour">
-          <td></td>
-      </tr>
-      <tr id = "day">
-          <td></td>
-      </tr>
-      <tr id = "week">
-          <td></td>
-      </tr>
-      <tr id = "total">
-          <td></td>
-      </tr> 
-</table> -->
-
-
-=======
-		</script>
-<<<<<<< HEAD
-		<?php
-			$dom = new DomDocument();
-			$dom -> load("dashboard.xml");
-			echo("<table>");
-			for($i = 0; $i < 10; $i++)
-			{
-				$deposit = $xmlObject->children()->deposits->deposit;
-			    echo("<tr>");
-			    print("<td>Test</td>");
-			    print("<td>Test</td>");
-			    print("<td>Test</td>");
-			    print("<td>Test</td>");
-			    echo("</tr>");	
-			}
-			echo("</table>");
-		?>
->>>>>>> 47912041483c175a73181c0af8ca546bedd0b2bb
-=======
 		<div id = "deposits">
 			<table>
 		        <thead>
@@ -117,6 +53,5 @@ myTable.rows[15].cells[20].innerHTML = 'Hello';
 		        </tbody>
 	        </table>
 	</div>
->>>>>>> 7b9780be04d81b2ab9aabcc9724a0c841c727335
 	</body>
 </html>
