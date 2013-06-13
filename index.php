@@ -2,13 +2,68 @@
 	<head>
 		<title>JavaScript/CSS3 Departure Board</title>
 		<link rel="stylesheet" href="departure-board.css" />
-	</head>
-	
-	<body onLoad = "buildHtmlTable()">
-		<h1>All Aboard Betterment</h1>
-		<div id="animation"></div>
+		<link rel="stylesheet" href="flip.css" />
 
-		<table id="placeholder"></table>
+		<!-- IMPORT SCRIPT HERE -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+		</script>
+
+		<!-- Rotation Script-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.hover').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+				
+				// set up click/tap panels
+				$('.click').toggle(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+				
+				// set up block configuration
+				$('.block .action').click(function(){
+					$('.block').addClass('flip');
+				});
+				$('.block .edit-submit').click(function(e){
+					$('.block').removeClass('flip');
+					
+					// why not update that list for fun?
+					$('#list-title').text($('#form_title').val());
+					$('#list-items').empty();
+					for (var num = 1; num <= $('#form_items').val(); num++) {
+						$('#list-items').append('<li>Name '+num+'</li>');
+					}
+					e.preventDefault();
+				});
+				
+				// set up contact form link
+				$('.contact .action').click(function(e){
+					$('.contact').addClass('flip');
+					e.preventDefault();
+				});
+				$('.contact .edit-submit').click(function(e){
+					$('.contact').removeClass('flip');
+					// just for effect we'll update the content
+					e.preventDefault();
+				});
+				
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<h1 id="title1">ALL ABOARD BETTERMENT</h1>
+
+		<!-- THIS IS THE ACTUAL TABLE.  -->
+		<!-- <table id="placeholder"></table> -->
 		<script src="./js/json-to-table.js"></script>
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script>
@@ -18,18 +73,33 @@
 			});
 		</script>
 
-		<!-- TODO: (1) Import data from TrainData.json (2) Write each dep/wd/goal as an aligned string on board.setValue() -->
+		<!-- TEST TABLE for Animation Experimentation -->
+		<table id="table">
+			<tr id="row1">
+				<td>
+					<div class="click panel square">
+						<div class="front">
+							<h2>Front (click)</h2>
+						</div>
+						<div class="back">
+							<h2>Back (click)</h2>
+						</div>
+					</div>
+				</td>
+				<td>(1,2)</td>
+				<td>(1,3)</td>
+			</tr>
+			<tr id="row2">
+				<td>(2,1)</td>
+				<td>(2,2)</td>
+				<td>(2,3)</td>
+			</tr>
+			<tr id="row3">
+				<td>(3,1)</td>
+				<td>(3,2)</td>
+				<td>(3,3)</td>
+			</tr>
+		</table>
 
-		<!-- Old Departure Board -->
-		<script src="./js/departure-board.js"></script>
-		<script>
-			var board = new DepartureBoard (document.getElementById ('animation'), { rowCount: 1, letterCount: 40 }); 
-			
-			board.setValue ( 
-				 [ 'Name      type  track    destination',
-				 // 'Connor Lee  Goal    Vacation  40,000', 'Trisha M Clough    Goal         Roth IRA      $200,000', 'Arif Mansuri       Goal         Education     $50,000', 'Louise P Hines     Deposit      Vacation      $90,000', 'Aaron Didier       Goal         Retirement    $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000', 'Lawrence Abas      Deposit      House         $40,000', 'Ioan Ailoae        Goal         Wedding       $40,000', 'Stephen Schruhl    Deposit      Car           $40,000', 'John Woods         Goal         Wealth        $40,000'
-
-				]);
-		</script>
 	</body>
 </html>
