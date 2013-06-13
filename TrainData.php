@@ -24,7 +24,7 @@ for($i = 0; $i < 3; $i++)
         "TRIP DISTANCE" => (string)round($deposits[$i]->goalAmount),
         "DURATION" => (string)$deposits[$i]->goalLength,
         "Δ MILES" => (string)round($deposits[$i]->amount),
-        "PROGRESS" => (string)round($deposits[$i]->balance),
+        "PROGRESS" => (string)(round($deposits[$i]->balance) + round($deposits[$i]->amount)),
         "STATUS" => $status,
         );
     $mostRecentThreeDeposits[$i]=$chart;
@@ -52,7 +52,7 @@ for($i = 0; $i < 3; $i++)
         "TRIP DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
         "DURATION" => (string)$withdrawals[$i]->goalLength,
         "Δ MILES" => (string)round($withdrawals[$i]->amount),
-        "PROGRESS" => (string)round($withdrawals[$i]->balance),
+        "PROGRESS" => (string)(round($withdrawals[$i]->balance) + round($withdrawals[$i]->amount)),
         "STATUS" => $status,
         );
     $mostRecentThreeWithdrawals[$i]=$chart;
@@ -71,7 +71,7 @@ for($i = 0; $i < 3; $i++)
         "TRIP DISTANCE" => (string)round($goals[$i]->goalAmount),
         "DURATION" => (string)$goals[$i]->goalLength,
         "Δ MILES" => (string)round($goals[$i]->initDeposit),
-        "PROGRESS" => "0",
+        "PROGRESS" => (string)round($goals[$i]->initDeposit),
         "STATUS" => "DEPARTED",
         );
         $mostRecentThreeGoals[$i]=$chart;
