@@ -26,6 +26,7 @@ for($i = 0; $i < 3; $i++)
         "MILES_CHANGE" => (string)round($deposits[$i]->amount),
         "PROGRESS" => (string)(round($deposits[$i]->balance) + round($deposits[$i]->amount)),
         "STATUS" => $status,
+        "selector" => ".deposit" . $i
         );
     $mostRecentThreeDeposits[$i]=$chart;
 }
@@ -54,6 +55,7 @@ for($i = 0; $i < 3; $i++)
         "MILES_CHANGE" => (string)round($withdrawals[$i]->amount),
         "PROGRESS" => (string)(round($withdrawals[$i]->balance) + round($withdrawals[$i]->amount)),
         "STATUS" => $status,
+        "selector" => ".withdrawal" . $i
         );
     $mostRecentThreeWithdrawals[$i]=$chart;
 }
@@ -73,6 +75,7 @@ for($i = 0; $i < 3; $i++)
         "MILES_CHANGE" => (string)round($goals[$i]->initDeposit),
         "PROGRESS" => (string)round($goals[$i]->initDeposit),
         "STATUS" => "DEPARTED",
+        "selector" => ".goal" . $i
         );
         $mostRecentThreeGoals[$i]=$chart;
 }

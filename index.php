@@ -67,113 +67,700 @@
 		<h1 id="title1">ALL ABOARD BETTERMENT</h1>
 
 		<div id="placeholder"></div>
-    	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    	<script>
-  		$.getJSON('TrainDataMerged.json', function(data) {
-        var output=
-        "<table id='table'>" +
-        	"<tr>" +
-        		"<td>" +
-        			"<h2>NAME</h2>" +
-        		"</td>" +
-        		"<td>" +
-        			"<h2>DESTINATION</h2>" +
-        		"</td>" +
-        		"<td>" +
-        			"<h2>TRIP DISTANCE</h2>" +
-        		"</td>" +
-        		"<td>" +
-        			"<h2>DURATION</h2>" +
-        		"</td>" +
-        		"<td>" +
-        			"<h2>MILES CHANGE</h2>" +
-        		"</td>" +
-        		"<td>" +
-        			"<h2>PROGRESS</h2>" +
-        		"</td>" +
-        		"<td>" +
-        			"<h2>STATUS</h2>" +
-        		"</td>" +
-        	"</tr>";
-        for (var i in data.TransObject) {
-        	output+=
-			"<tr>" +
-				"<td>" +
-					"<div class='click panel square'>" +
-						"<div class='front'>" +
-							"<h2>" + data.TransObject[i].NAME + "</h2>" +
-						"</div>" +
-						"<div class='back'>" +
-							"<h2></h2>" +
-						"</div>" +
-					"</div>" +
-				"</td>" +
-				"<td>" +
-					"<div class='click panel square'>" +
-						"<div class='front'>" +
-							"<h2>" + data.TransObject[i].DESTINATION + "</h2>" +
-						"</div>" +
-						"<div class='back'>" +
-							"<h2></h2>" +
-						"</div>" +
-					"</div>" +
-				"</td>" +
-				"<td>" +
-					"<div class='click panel square'>" +
-						"<div class='front'>" +
-							"<h2>" + data.TransObject[i].TRIP_DISTANCE + "</h2>" +
-						"</div>" +
-						"<div class='back'>" +
-							"<h2></h2>" +
-						"</div>" +
-					"</div>" +
-				"</td>" +
-				"<td>" +
-					"<div class='click panel square'>" +
-						"<div class='front'>" +
-							"<h2>" + data.TransObject[i].DURATION + "</h2>" +
-						"</div>" +
-						"<div class='back'>" +
-							"<h2></h2>" +
-						"</div>" +
-					"</div>" +
-				"</td>" +
-				"<td>" +
-					"<div class='click panel square'>" +
-						"<div class='front'>" +
-							"<h2>" + data.TransObject[i].MILES_CHANGE + "</h2>" +
-						"</div>" +
-						"<div class='back'>" +
-							"<h2></h2>" +
-						"</div>" +
-					"</div>" +
-				"</td>" +
-				"<td>" +
-					"<div class='click panel square'>" +
-						"<div class='front'>" +
-							"<h2>" + data.TransObject[i].PROGRESS + "</h2>" +
-						"</div>" +
-						"<div class='back'>" +
-							"<h2></h2>" +
-						"</div>" +
-					"</div>" +
-				"</td>" +
-				"<td>" +
-					"<div class='click panel square'>" +
-						"<div class='front'>" +
-							"<h2>" + data.TransObject[i].STATUS + "</h2>" +
-						"</div>" +
-						"<div class='back'>" +
-							"<h2></h2>" +
-						"</div>" +
-					"</div>" +
-				"</td>" +
-			"</tr>";
-        }
-        output+="</table>";
-        document.getElementById("placeholder").innerHTML=output;
+    	
+        <table id='table'>
+        	<tr>
+        		<td>
+        			<h2>NAME</h2>
+        		</td>
+        		<td>
+        			<h2>DESTINATION</h2>
+        		</td>
+        		<td>
+        			<h2>TRIP DISTANCE</h2>
+        		</td>
+        		<td>
+        			<h2>DURATION</h2>
+        		</td>
+        		<td>
+        			<h2>MILES CHANGE</h2>
+        		</td>
+        		<td>
+        			<h2>PROGRESS</h2>
+        		</td>
+        		<td>
+        			<h2>STATUS</h2>
+        		</td>
+        	</tr>
+			<tr class='deposit0'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class='deposit1'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class='deposit2'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class='withdrawal0'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class='withdrawal1'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class='withdrawal2'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class='goal0'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class='goal1'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr class='goal2'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='NAME'> name </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DESTINATION'> dest </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DISTANCE'> distance </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION'> duration </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE'> miles change</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS'> progress </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='STATUS'> status </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+
+$.getJSON('TrainDataMerged.json', function(data) {
+
+for (var i in data.TransObject) {
+
+	var rowData = data.TransObject[i];
+	
+	for(var k in rowData){
+		var selectorString = rowData["selector"] + ' p.' + k;
+		$(selectorString).html(rowData[k]);
+
+		console.log("hi");
+	}
+}
         addEvents();
   		});
+        	
     </script>
 
 	</body>
