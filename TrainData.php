@@ -21,10 +21,10 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$deposits[$i]->goalName,
-        "TOTAL DISTANCE" => (string)round($deposits[$i]->goalAmount),
+        "TRIP_DISTANCE" => (string)round($deposits[$i]->goalAmount),
         "DURATION" => (string)$deposits[$i]->goalLength,
-        "MILES ADDED" => (string)round($deposits[$i]->amount),
-        "DISTANCE TRAVELED" => (string)round($deposits[$i]->balance),
+        "MILES_CHANGE" => (string)round($deposits[$i]->amount),
+        "PROGRESS" => (string)(round($deposits[$i]->balance) + round($deposits[$i]->amount)),
         "STATUS" => $status,
         );
     $mostRecentThreeDeposits[$i]=$chart;
@@ -49,10 +49,10 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$withdrawals[$i]->goalName,
-        "TOTAL DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
+        "TRIP_DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
         "DURATION" => (string)$withdrawals[$i]->goalLength,
-        "MILES ADDED" => (string)round($withdrawals[$i]->amount),
-        "DISTANCE TRAVELED" => (string)round($withdrawals[$i]->balance),
+        "MILES_CHANGE" => (string)round($withdrawals[$i]->amount),
+        "PROGRESS" => (string)(round($withdrawals[$i]->balance) + round($withdrawals[$i]->amount)),
         "STATUS" => $status,
         );
     $mostRecentThreeWithdrawals[$i]=$chart;
@@ -68,33 +68,27 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$goals[$i]->goalName,
-        "TOTAL DISTANCE" => (string)round($goals[$i]->goalAmount),
+        "TRIP_DISTANCE" => (string)round($goals[$i]->goalAmount),
         "DURATION" => (string)$goals[$i]->goalLength,
-        "MILES ADDED" => (string)round($goals[$i]->initDeposit),
-        "DISTANCE TRAVELED" => "0",
+        "MILES_CHANGE" => (string)round($goals[$i]->initDeposit),
+        "PROGRESS" => (string)round($goals[$i]->initDeposit),
         "STATUS" => "DEPARTED",
         );
-    $mostRecentThreeGoals[$i]=$chart;
+        $mostRecentThreeGoals[$i]=$chart;
 }
 
-
-// Split into 3 Objects, each an array of 3 Transactions
-$file = "TrainData.json";
-file_put_contents($file, "{\"DepositObject\":");
-$fh = fopen($file, 'a') or die("can't open file");
-fwrite($fh, json_encode($mostRecentThreeDeposits));
-fwrite($fh, ",");
-fwrite($fh, "\"WithdrawalObject\":");
-fwrite($fh, json_encode($mostRecentThreeWithdrawals));
-fwrite($fh, ",");
-fwrite($fh, "\"GoalObject\":");
-fwrite($fh, json_encode($mostRecentThreeGoals));
-fwrite($fh, "}");
-fclose($fh);
 
 // Keep as an entire array of 9 transactions
 $transactions = array_merge($mostRecentThreeDeposits, $mostRecentThreeWithdrawals);
 $merged = array_merge($transactions, $mostRecentThreeGoals);
 $file2 = "TrainDataMerged.json";
-file_put_contents($file2, json_encode($merged));
+file_put_contents($file2, "{\"TransObject\":");
+$fh2 = fopen($file2, 'a') or die("can't open file");
+fwrite($fh2, json_encode($merged));
+fwrite($fh2, "}");
+fclose($fh2);
+
 ?>
+
+
+
