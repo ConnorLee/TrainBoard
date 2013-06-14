@@ -21,9 +21,9 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$deposits[$i]->goalName,
-        "TRIP DISTANCE" => (string)round($deposits[$i]->goalAmount),
+        "TRIP_DISTANCE" => (string)round($deposits[$i]->goalAmount),
         "DURATION" => (string)$deposits[$i]->goalLength,
-        "Δ MILES" => (string)round($deposits[$i]->amount),
+        "MILES_CHANGE" => (string)round($deposits[$i]->amount),
         "PROGRESS" => (string)(round($deposits[$i]->balance) + round($deposits[$i]->amount)),
         "STATUS" => $status,
         );
@@ -49,9 +49,9 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$withdrawals[$i]->goalName,
-        "TRIP DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
+        "TRIP_DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
         "DURATION" => (string)$withdrawals[$i]->goalLength,
-        "Δ MILES" => (string)round($withdrawals[$i]->amount),
+        "MILES_CHANGE" => (string)round($withdrawals[$i]->amount),
         "PROGRESS" => (string)(round($withdrawals[$i]->balance) + round($withdrawals[$i]->amount)),
         "STATUS" => $status,
         );
@@ -68,32 +68,27 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$goals[$i]->goalName,
-        "TRIP DISTANCE" => (string)round($goals[$i]->goalAmount),
+        "TRIP_DISTANCE" => (string)round($goals[$i]->goalAmount),
         "DURATION" => (string)$goals[$i]->goalLength,
-        "Δ MILES" => (string)round($goals[$i]->initDeposit),
+        "MILES_CHANGE" => (string)round($goals[$i]->initDeposit),
         "PROGRESS" => (string)round($goals[$i]->initDeposit),
         "STATUS" => "DEPARTED",
         );
         $mostRecentThreeGoals[$i]=$chart;
 }
 
-// Split into 3 Objects, each an array of 3 Transactions
-$file = "TrainData.json";
-file_put_contents($file, "{\"DepositObject\":");
-$fh = fopen($file, 'a') or die("can't open file");
-fwrite($fh, json_encode($mostRecentThreeDeposits));
-fwrite($fh, ",");
-fwrite($fh, "\"WithdrawalObject\":");
-fwrite($fh, json_encode($mostRecentThreeWithdrawals));
-fwrite($fh, ",");
-fwrite($fh, "\"GoalObject\":");
-fwrite($fh, json_encode($mostRecentThreeGoals));
-fwrite($fh, "}");
-fclose($fh);
 
 // Keep as an entire array of 9 transactions
 $transactions = array_merge($mostRecentThreeDeposits, $mostRecentThreeWithdrawals);
 $merged = array_merge($transactions, $mostRecentThreeGoals);
 $file2 = "TrainDataMerged.json";
-file_put_contents($file2, json_encode($merged));
+file_put_contents($file2, "{\"TransObject\":");
+$fh2 = fopen($file2, 'a') or die("can't open file");
+fwrite($fh2, json_encode($merged));
+fwrite($fh2, "}");
+fclose($fh2);
+
 ?>
+
+
+
