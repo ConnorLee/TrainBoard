@@ -5,7 +5,7 @@
    <fundedUsers>20507</fundedUsers>
    <goals>
       <goal>
-         <fullName>Setter A Ment</fullName>
+         <fullName>Getter A Ment</fullName>
          <goalName>Car Fund</goalName>
          <goalAmount>300000.00</goalAmount>
          <goalLength>8</goalLength>
