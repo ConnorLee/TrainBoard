@@ -225,4 +225,6 @@ td:before {
 
 #myDiv:hover {
     -webkit-transform:rotateX(180deg);
+        -webkit-transform:rotateX(180deg);
+
 }
