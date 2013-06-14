@@ -71,6 +71,9 @@
         <table id='table'>
         	<tr>
         		<td>
+        			<h2>TYPE</h2>
+        		</td>
+        		<td>
         			<h2>NAME</h2>
         		</td>
         		<td>
@@ -93,6 +96,16 @@
         		</td>
         	</tr>
 			<tr class='deposit0'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p id="d">D</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
@@ -168,6 +181,16 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
+							<p id="d">D</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
 							<p class='NAME'> name </p>
 						</div>
 						<div class='back'>
@@ -237,6 +260,16 @@
 				</td>
 			</tr>
 			<tr class='deposit2'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p id="d">D</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
@@ -312,6 +345,16 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
+							<p id="w">W</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
 							<p class='NAME'> name </p>
 						</div>
 						<div class='back'>
@@ -381,6 +424,16 @@
 				</td>
 			</tr>
 			<tr class='withdrawal1'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p id="w">W</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
@@ -456,6 +509,16 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
+							<p id="w">W</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
 							<p class='NAME'> name </p>
 						</div>
 						<div class='back'>
@@ -525,6 +588,16 @@
 				</td>
 			</tr>
 			<tr class='goal0'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p id="g">G</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
@@ -600,6 +673,16 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
+							<p id="g">G</p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
 							<p class='NAME'> name </p>
 						</div>
 						<div class='back'>
@@ -669,6 +752,16 @@
 				</td>
 			</tr>
 			<tr class='goal2'>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p id="g">G </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
@@ -745,22 +838,42 @@
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
 
-$.getJSON('TrainDataMerged.json', function(data) {
+setInterval(function(){ 
+
+$.getJSON('TrainData.php', function(data) {
+
 
 for (var i in data.TransObject) {
 
 	var rowData = data.TransObject[i];
 	
 	for(var k in rowData){
-		var selectorString = rowData["selector"] + ' p.' + k;
-		$(selectorString).html(rowData[k]);
+		var $pToUpdate = $(rowData["selector"] + ' p.' + k);
 
-		console.log("hi");
+		// setting the value of rowData's k into the selector for that k
+		var old = $pToUpdate.html();
+
+		 if(old != rowData[k]){
+			$pToUpdate.html(rowData[k]); // definitely works
+			// setTimeout(function(){
+				$pToUpdate.parent().parent().addClass('flip');
+			// }, (200*Number(i)));
+		// }
+
+		setTimeout(function(){
+			$pToUpdate.parent().parent().removeClass('flip');
+		}, 50);
+
+
+		}
+	
+
+
 	}
 }
-        addEvents();
-  		});
-        	
+});
+}, 10000);
+
     </script>
 
 	</body>

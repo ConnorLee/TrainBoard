@@ -81,15 +81,17 @@ for($i = 0; $i < 3; $i++)
 }
 
 
-// Keep as an entire array of 9 transactions
+// // Keep as an entire array of 9 transactions
 $transactions = array_merge($mostRecentThreeDeposits, $mostRecentThreeWithdrawals);
 $merged = array_merge($transactions, $mostRecentThreeGoals);
-$file2 = "TrainDataMerged.json";
-file_put_contents($file2, "{\"TransObject\":");
-$fh2 = fopen($file2, 'a') or die("can't open file");
-fwrite($fh2, json_encode($merged));
-fwrite($fh2, "}");
-fclose($fh2);
+// $file2 = "TrainDataMerged.json";
+// file_put_contents($file2, "{\"TransObject\":");
+// $fh2 = fopen($file2, 'a') or die("can't open file");
+// fwrite($fh2, json_encode($merged));
+// fwrite($fh2, "}");
+// fclose($fh2);
+
+echo "{\"TransObject\":" . json_encode($merged) . "}";
 
 ?>
 
