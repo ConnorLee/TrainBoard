@@ -5,11 +5,11 @@
    <fundedUsers>20507</fundedUsers>
    <goals>
       <goal>
-         <fullName>Better A Ment</fullName>
-         <goalName>House Fund</goalName>
-         <goalAmount>30000.00</goalAmount>
-         <goalLength>7</goalLength>
-         <initDeposit>50.00</initDeposit>
+         <fullName>Setter A Ment</fullName>
+         <goalName>Car Fund</goalName>
+         <goalAmount>300000.00</goalAmount>
+         <goalLength>8</goalLength>
+         <initDeposit>500.00</initDeposit>
       </goal>
       <goal>
          <fullName>Firstname Lastname</fullName>

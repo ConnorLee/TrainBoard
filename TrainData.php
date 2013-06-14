@@ -26,6 +26,7 @@ for($i = 0; $i < 3; $i++)
         "MILES_CHANGE" => (string)round($deposits[$i]->amount),
         "PROGRESS" => (string)(round($deposits[$i]->balance) + round($deposits[$i]->amount)),
         "STATUS" => $status,
+        "selector" => ".deposit" . $i
         );
     $mostRecentThreeDeposits[$i]=$chart;
 }
@@ -54,6 +55,7 @@ for($i = 0; $i < 3; $i++)
         "MILES_CHANGE" => (string)round($withdrawals[$i]->amount),
         "PROGRESS" => (string)(round($withdrawals[$i]->balance) + round($withdrawals[$i]->amount)),
         "STATUS" => $status,
+        "selector" => ".withdrawal" . $i
         );
     $mostRecentThreeWithdrawals[$i]=$chart;
 }
@@ -73,20 +75,23 @@ for($i = 0; $i < 3; $i++)
         "MILES_CHANGE" => (string)round($goals[$i]->initDeposit),
         "PROGRESS" => (string)round($goals[$i]->initDeposit),
         "STATUS" => "DEPARTED",
+        "selector" => ".goal" . $i
         );
         $mostRecentThreeGoals[$i]=$chart;
 }
 
 
-// Keep as an entire array of 9 transactions
+// // Keep as an entire array of 9 transactions
 $transactions = array_merge($mostRecentThreeDeposits, $mostRecentThreeWithdrawals);
 $merged = array_merge($transactions, $mostRecentThreeGoals);
-$file2 = "TrainDataMerged.json";
-file_put_contents($file2, "{\"TransObject\":");
-$fh2 = fopen($file2, 'a') or die("can't open file");
-fwrite($fh2, json_encode($merged));
-fwrite($fh2, "}");
-fclose($fh2);
+// $file2 = "TrainDataMerged.json";
+// file_put_contents($file2, "{\"TransObject\":");
+// $fh2 = fopen($file2, 'a') or die("can't open file");
+// fwrite($fh2, json_encode($merged));
+// fwrite($fh2, "}");
+// fclose($fh2);
+
+echo "{\"TransObject\":" . json_encode($merged) . "}";
 
 ?>
 
