@@ -70,30 +70,22 @@
     	
         <table id='table'>
         	<tr>
-        		<td>
-        			<h2>TYPE</h2>
-        		</td>
-        		<td>
-        			<h2>NAME</h2>
-        		</td>
-        		<td>
-        			<h2>DESTINATION</h2>
-        		</td>
-        		<td>
-        			<h2>TRIP DISTANCE</h2>
-        		</td>
-        		<td>
-        			<h2>DURATION</h2>
-        		</td>
-        		<td>
-        			<h2>MILES CHANGE</h2>
-        		</td>
-        		<td>
-        			<h2>PROGRESS</h2>
-        		</td>
-        		<td>
-        			<h2>STATUS</h2>
-        		</td>
+        			<th>TYPE</th>
+        	
+        			<th>NAME</th>
+        	
+        			<th>DESTINATION</th>
+        		
+        			<th>TRIP DISTANCE</th>
+        		
+        			<th>DURATION</th>
+        		
+        			<th>MILES CHANGE</th>
+        		
+        			<th>PROGRESS</th>
+        		
+        			<th>STATUS</th>
+        	
         	</tr>
 			<tr class='deposit0'>
 				<td>
