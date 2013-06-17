@@ -179,16 +179,16 @@ thead{
 text-align: center;
   text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
   font-size: 50px;
-
 }
 
-th{
-	margin-bottom: -75px;
-	margin-top: -75px;
+tr th{
+	padding-bottom: -50%;
+	padding-top: -50%;
+	font-family: 'Times';
 }
 
 td {
-    padding:  5px 10px;
+    padding:  5px 5px;
     display: inline-block;
     background: rgb(30, 30, 30);
     background: -webkit-gradient(linear, center top, center bottom, 
