@@ -47,7 +47,12 @@ for($i = 0; $i < 3; $i++)
     $lastSpace = strrpos($name, " ");
     $lastName = substr($name, $lastSpace + 1);
     $finalName = array(" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", );
-    for($n=0; $n < strlen($lastName); $n++) {
+    if(strlen($lastName) <= 10) {
+        $lastLen = strlen($lastName);
+    } else {
+        $lastLen = 10;
+    }
+    for($n=0; $n < $lastLen; $n++) {
         $finalName[$n] = substr($lastName, $n, 1);
     }
 
@@ -152,11 +157,16 @@ for($i = 0; $i < 3; $i++)
 
 
     // get characters for name
-    $name = (string)$deposits[$i]->fullName;
+    $name = (string)$withdrawals[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $lastName = substr($name, $lastSpace + 1);
     $finalName = array(" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", );
-    for($n=0; $n < strlen($lastName); $n++) {
+    if(strlen($lastName) <= 10) {
+        $lastLen = strlen($lastName);
+    } else {
+        $lastLen = 10;
+    }
+    for($n=0; $n < $lastLen; $n++) {
         $finalName[$n] = substr($lastName, $n, 1);
     }
 
@@ -259,15 +269,20 @@ for($i = 0; $i < 3; $i++)
     }
 
     // get characters for name
-    $name = (string)$deposits[$i]->fullName;
+    $name = (string)$goals[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $lastName = substr($name, $lastSpace + 1);
     $finalName = array(" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", );
-    for($n=0; $n < strlen($lastName); $n++) {
+    if(strlen($lastName) <= 10) {
+        $lastLen = strlen($lastName);
+    } else {
+        $lastLen = 10;
+    }
+    for($n=0; $n < $lastLen; $n++) {
         $finalName[$n] = substr($lastName, $n, 1);
     }
 
-    
+
     $chart = array(
         "NAME0" => substr($name, 0, 1),
         "NAME1" => ".",
