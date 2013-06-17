@@ -16,7 +16,7 @@
 		<div id="placeholder"></div>
     	
         <table id='table'>
-        	<tr>
+<!--         	<tr>
         		<td>
         			<h2>TYPE</h2>
         		</td>
@@ -41,7 +41,7 @@
         		<td>
         			<h2>STATUS</h2>
         		</td>
-        	</tr>
+        	</tr> -->
 			<tr class='deposit0'>
 				<td>
 					<div class='click panel square'>
@@ -76,7 +76,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -86,7 +86,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -96,7 +96,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -106,7 +106,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -158,7 +398,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -168,7 +408,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -178,7 +418,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -188,7 +428,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -240,7 +720,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -250,7 +730,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -260,7 +740,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -270,7 +750,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -292,7 +1012,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="w">W</p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -322,7 +1042,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -332,7 +1052,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -342,7 +1062,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -352,7 +1072,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -374,7 +1334,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="w">W</p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -404,7 +1364,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -414,7 +1374,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -424,7 +1384,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -434,7 +1394,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -456,7 +1656,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="w">W</p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -486,7 +1686,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -496,7 +1696,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -506,7 +1706,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -516,7 +1716,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -538,7 +1978,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="g">G</p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -568,7 +2008,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -578,7 +2018,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -588,7 +2028,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -598,7 +2038,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -620,7 +2300,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="g">G</p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -650,7 +2330,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -660,7 +2340,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -670,7 +2350,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -680,7 +2360,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -702,7 +2622,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="g">G </p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -732,7 +2652,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='TRIP_DISTANCE'> distance </p>
+							<p class='TRIP_DIST0'> 0 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -742,7 +2662,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='DURATION'> duration </p>
+							<p class='TRIP_DIST1'> 1 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -752,7 +2672,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='MILES_CHANGE'> miles change</p>
+							<p class='TRIP_DIST2'> 2 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -762,7 +2682,247 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p class='PROGRESS'> progress </p>
+							<p class='TRIP_DIST3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='TRIP_DIST7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='DURATION3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='MILES_CHANGE7'> 7 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS0'> 0 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS1'> 1 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS2'> 2 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS3'> 3 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS4'> 4 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS5'> 5 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS6'> 6 </p>
+						</div>
+						<div class='back'>
+							<p></p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<div class='click panel square'>
+						<div class='front'>
+							<p class='PROGRESS7'> 7 </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -787,35 +2947,32 @@
 
 setInterval(function(){ 
 
-$.getJSON('TrainData.php', function(data) {
+	$.getJSON('TrainData.php', function(data) {
 
 
-for (var i in data.TransObject) {
+	for (var i in data.TransObject) {
 
-	var rowData = data.TransObject[i];
+		var rowData = data.TransObject[i];
 	
-	for(var k in rowData){
-		var $pToUpdate = $(rowData["selector"] + ' p.' + k);
+		for(var k in rowData){
+			var $pToUpdate = $(rowData["selector"] + ' p.' + k);
 
-		// setting the value of rowData's k into the selector for that k
-		var old = $pToUpdate.html();
+			// setting the value of rowData's k into the selector for that k
+			var old = $pToUpdate.html();
 
-		 if(old != rowData[k]){
-			$pToUpdate.html(rowData[k]); // definitely works
-			// setTimeout(function(){
-			$pToUpdate.parent().parent().toggleClass('flip');
+		 	if(old != rowData[k]){
+				$pToUpdate.html(rowData[k]); // definitely works
+				// setTimeout(function(){
+				$pToUpdate.parent().parent().toggleClass('flip');
 
+			}
 
 		}
-	
-
-
 	}
-}
-});
+	});
 }, 10000);
 
-    </script>
+</script>
 
 	</body>
 </html>
