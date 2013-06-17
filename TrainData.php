@@ -157,7 +157,7 @@ for($i = 0; $i < 3; $i++)
 
 
     // get characters for name
-    $name = (string)$deposits[$i]->fullName;
+    $name = (string)$withdrawals[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $lastName = substr($name, $lastSpace + 1);
     $finalName = array(" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", );
@@ -269,7 +269,7 @@ for($i = 0; $i < 3; $i++)
     }
 
     // get characters for name
-    $name = (string)$deposits[$i]->fullName;
+    $name = (string)$goals[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $lastName = substr($name, $lastSpace + 1);
     $finalName = array(" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", );
