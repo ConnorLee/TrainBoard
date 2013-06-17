@@ -6,6 +6,43 @@ $xml = simplexml_load_file("dashboard.xml");
 $deposits = $xml->children()->deposits->children();
 for($i = 0; $i < 3; $i++)
 {
+    // get digits for trip distance
+    $dist = round($deposits[$i]->goalAmount);
+    $finalDists = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigDist = strlen((string)round($deposits[$i]->goalAmount));
+    for($j = 7; $j > (7 - $numDigDist); $j--) {
+        $finalDists[$j] = (string)($dist % 10);
+        $dist = floor($dist/10);
+    }
+
+    // get digits for duration
+    $dur = round($deposits[$i]->goalLength);
+    $finalDurs = array(" ", " ", " ", " ");
+    $numDigDur = strlen((string)round($deposits[$i]->goalLength));
+    for($j = 3; $j > (3 - $numDigDur); $j--) {
+        $finalDurs[$j] = (string)($dur % 10);
+        $dur = floor($dur/10);
+    }
+
+    // get digits for miles change
+    $mile = round($deposits[$i]->amount);
+    $finalMiles = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigMile = strlen((string)round($deposits[$i]->amount));
+    for($j = 7; $j > (7 - $numDigMile); $j--) {
+        $finalMiles[$j] = (string)($mile % 10);
+        $mile = floor($mile/10);
+    }
+
+    // get digits for progress
+    $prog = (round($deposits[$i]->balance) + round($deposits[$i]->amount));
+    $finalProgs = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigProg = strlen((string)(round($deposits[$i]->balance) + round($deposits[$i]->amount)));
+    for($j = 7; $j > (7 - $numDigProg); $j--) {
+        $finalProgs[$j] = (string)($prog % 10);
+        $prog = floor($prog/10);
+    }
+
+
     $name = (string)$deposits[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
@@ -21,10 +58,34 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$deposits[$i]->goalName,
-        "TRIP_DISTANCE" => (string)round($deposits[$i]->goalAmount),
-        "DURATION" => (string)$deposits[$i]->goalLength,
-        "MILES_CHANGE" => (string)round($deposits[$i]->amount),
-        "PROGRESS" => (string)(round($deposits[$i]->balance) + round($deposits[$i]->amount)),
+        "TRIP_DIST0" => $finalDists[0],
+        "TRIP_DIST1" => $finalDists[1],
+        "TRIP_DIST2" => $finalDists[2],
+        "TRIP_DIST3" => $finalDists[3],
+        "TRIP_DIST4" => $finalDists[4],
+        "TRIP_DIST5" => $finalDists[5],
+        "TRIP_DIST6" => $finalDists[6],
+        "TRIP_DIST7" => $finalDists[7],
+        "DURATION0" => $finalDurs[0],
+        "DURATION1" => $finalDurs[1],
+        "DURATION2" => $finalDurs[2],
+        "DURATION3" => $finalDurs[3],
+        "MILES_CHANGE0" => $finalMiles[0],
+        "MILES_CHANGE1" => $finalMiles[1],
+        "MILES_CHANGE2" => $finalMiles[2],
+        "MILES_CHANGE3" => $finalMiles[3],
+        "MILES_CHANGE4" => $finalMiles[4],
+        "MILES_CHANGE5" => $finalMiles[5],
+        "MILES_CHANGE6" => $finalMiles[6],
+        "MILES_CHANGE7" => $finalMiles[7],
+        "PROGRESS0" => $finalProgs[0],
+        "PROGRESS1" => $finalProgs[1],
+        "PROGRESS2" => $finalProgs[2],
+        "PROGRESS3" => $finalProgs[3],
+        "PROGRESS4" => $finalProgs[4],
+        "PROGRESS5" => $finalProgs[5],
+        "PROGRESS6" => $finalProgs[6],
+        "PROGRESS7" => $finalProgs[7],
         "STATUS" => $status,
         "selector" => ".deposit" . $i
         );
@@ -35,6 +96,43 @@ for($i = 0; $i < 3; $i++)
 $withdrawals = $xml->children()->withdrawals->children();
 for($i = 0; $i < 3; $i++)
 {
+    // get digits for trip distance
+    $dist = round($withdrawals[$i]->goalAmount);
+    $finalDists = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigDist = strlen((string)round($withdrawals[$i]->goalAmount));
+    for($j = 7; $j > (7 - $numDigDist); $j--) {
+        $finalDists[$j] = (string)($dist % 10);
+        $dist = floor($dist/10);
+    }
+
+    // get digits for duration
+    $dur = round($withdrawals[$i]->goalLength);
+    $finalDurs = array(" ", " ", " ", " ");
+    $numDigDur = strlen((string)round($withdrawals[$i]->goalLength));
+    for($j = 3; $j > (3 - $numDigDur); $j--) {
+        $finalDurs[$j] = (string)($dur % 10);
+        $dur = floor($dur/10);
+    }
+
+    // get digits for miles change
+    $mile = round($withdrawals[$i]->amount);
+    $finalMiles = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigMile = strlen((string)round($withdrawals[$i]->amount));
+    for($j = 7; $j > (7 - $numDigMile); $j--) {
+        $finalMiles[$j] = (string)($mile % 10);
+        $mile = floor($mile/10);
+    }
+
+    // get digits for progress
+    $prog = (round($withdrawals[$i]->balance) + round($withdrawals[$i]->amount));
+    $finalProgs = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigProg = strlen((string)(round($withdrawals[$i]->balance) + round($withdrawals[$i]->amount)));
+    for($j = 7; $j > (7 - $numDigProg); $j--) {
+        $finalProgs[$j] = (string)($prog % 10);
+        $prog = floor($prog/10);
+    }
+
+
     $name = (string)$withdrawals[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
@@ -50,10 +148,34 @@ for($i = 0; $i < 3; $i++)
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$withdrawals[$i]->goalName,
-        "TRIP_DISTANCE" => (string)round($withdrawals[$i]->goalAmount),
-        "DURATION" => (string)$withdrawals[$i]->goalLength,
-        "MILES_CHANGE" => (string)round($withdrawals[$i]->amount),
-        "PROGRESS" => (string)(round($withdrawals[$i]->balance) + round($withdrawals[$i]->amount)),
+        "TRIP_DIST0" => $finalDists[0],
+        "TRIP_DIST1" => $finalDists[1],
+        "TRIP_DIST2" => $finalDists[2],
+        "TRIP_DIST3" => $finalDists[3],
+        "TRIP_DIST4" => $finalDists[4],
+        "TRIP_DIST5" => $finalDists[5],
+        "TRIP_DIST6" => $finalDists[6],
+        "TRIP_DIST7" => $finalDists[7],
+        "DURATION0" => $finalDurs[0],
+        "DURATION1" => $finalDurs[1],
+        "DURATION2" => $finalDurs[2],
+        "DURATION3" => $finalDurs[3],
+        "MILES_CHANGE0" => $finalMiles[0],
+        "MILES_CHANGE1" => $finalMiles[1],
+        "MILES_CHANGE2" => $finalMiles[2],
+        "MILES_CHANGE3" => $finalMiles[3],
+        "MILES_CHANGE4" => $finalMiles[4],
+        "MILES_CHANGE5" => $finalMiles[5],
+        "MILES_CHANGE6" => $finalMiles[6],
+        "MILES_CHANGE7" => $finalMiles[7],
+        "PROGRESS0" => $finalProgs[0],
+        "PROGRESS1" => $finalProgs[1],
+        "PROGRESS2" => $finalProgs[2],
+        "PROGRESS3" => $finalProgs[3],
+        "PROGRESS4" => $finalProgs[4],
+        "PROGRESS5" => $finalProgs[5],
+        "PROGRESS6" => $finalProgs[6],
+        "PROGRESS7" => $finalProgs[7],
         "STATUS" => $status,
         "selector" => ".withdrawal" . $i
         );
@@ -64,16 +186,77 @@ for($i = 0; $i < 3; $i++)
 $goals = $xml->children()->goals->children();
 for($i = 0; $i < 3; $i++)
 {
+    // get digits for trip distance
+    $dist = round($goals[$i]->goalAmount);
+    $finalDists = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigDist = strlen((string)round($goals[$i]->goalAmount));
+    for($j = 7; $j > (7 - $numDigDist); $j--) {
+        $finalDists[$j] = (string)($dist % 10);
+        $dist = floor($dist/10);
+    }
+
+    // get digits for duration
+    $dur = round($goals[$i]->goalLength);
+    $finalDurs = array(" ", " ", " ", " ");
+    $numDigDur = strlen((string)round($goals[$i]->goalLength));
+    for($j = 3; $j > (3 - $numDigDur); $j--) {
+        $finalDurs[$j] = (string)($dur % 10);
+        $dur = floor($dur/10);
+    }
+
+    // get digits for miles change
+    $mile = round($goals[$i]->amount);
+    $finalMiles = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigMile = strlen((string)round($goals[$i]->amount));
+    for($j = 7; $j > (7 - $numDigMile); $j--) {
+        $finalMiles[$j] = (string)($mile % 10);
+        $mile = floor($mile/10);
+    }
+
+    // get digits for progress
+    $prog = (round($goals[$i]->balance) + round($goals[$i]->amount));
+    $finalProgs = array(" ", " ", " ", " ", " ", " ", " ", " ");
+    $numDigProg = strlen((string)(round($goals[$i]->balance) + round($goals[$i]->amount)));
+    for($j = 7; $j > (7 - $numDigProg); $j--) {
+        $finalProgs[$j] = (string)($prog % 10);
+        $prog = floor($prog/10);
+    }
+
+
     $name = (string)$goals[$i]->fullName;
     $lastSpace = strrpos($name, " ");
     $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
     $chart = array(
         "NAME" => $abbName,
         "DESTINATION" => (string)$goals[$i]->goalName,
-        "TRIP_DISTANCE" => (string)round($goals[$i]->goalAmount),
-        "DURATION" => (string)$goals[$i]->goalLength,
-        "MILES_CHANGE" => (string)round($goals[$i]->initDeposit),
-        "PROGRESS" => (string)round($goals[$i]->initDeposit),
+        "TRIP_DIST0" => $finalDists[0],
+        "TRIP_DIST1" => $finalDists[1],
+        "TRIP_DIST2" => $finalDists[2],
+        "TRIP_DIST3" => $finalDists[3],
+        "TRIP_DIST4" => $finalDists[4],
+        "TRIP_DIST5" => $finalDists[5],
+        "TRIP_DIST6" => $finalDists[6],
+        "TRIP_DIST7" => $finalDists[7],
+        "DURATION0" => $finalDurs[0],
+        "DURATION1" => $finalDurs[1],
+        "DURATION2" => $finalDurs[2],
+        "DURATION3" => $finalDurs[3],
+        "MILES_CHANGE0" => $finalMiles[0],
+        "MILES_CHANGE1" => $finalMiles[1],
+        "MILES_CHANGE2" => $finalMiles[2],
+        "MILES_CHANGE3" => $finalMiles[3],
+        "MILES_CHANGE4" => $finalMiles[4],
+        "MILES_CHANGE5" => $finalMiles[5],
+        "MILES_CHANGE6" => $finalMiles[6],
+        "MILES_CHANGE7" => $finalMiles[7],
+        "PROGRESS0" => $finalProgs[0],
+        "PROGRESS1" => $finalProgs[1],
+        "PROGRESS2" => $finalProgs[2],
+        "PROGRESS3" => $finalProgs[3],
+        "PROGRESS4" => $finalProgs[4],
+        "PROGRESS5" => $finalProgs[5],
+        "PROGRESS6" => $finalProgs[6],
+        "PROGRESS7" => $finalProgs[7],
         "STATUS" => "DEPARTED",
         "selector" => ".goal" . $i
         );
@@ -84,12 +267,7 @@ for($i = 0; $i < 3; $i++)
 // // Keep as an entire array of 9 transactions
 $transactions = array_merge($mostRecentThreeDeposits, $mostRecentThreeWithdrawals);
 $merged = array_merge($transactions, $mostRecentThreeGoals);
-// $file2 = "TrainDataMerged.json";
-// file_put_contents($file2, "{\"TransObject\":");
-// $fh2 = fopen($file2, 'a') or die("can't open file");
-// fwrite($fh2, json_encode($merged));
-// fwrite($fh2, "}");
-// fclose($fh2);
+
 
 echo "{\"TransObject\":" . json_encode($merged) . "}";
 
