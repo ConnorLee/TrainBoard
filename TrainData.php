@@ -42,10 +42,17 @@ for($i = 0; $i < 3; $i++)
         $prog = floor($prog/10);
     }
 
-
+    // get characters for name
     $name = (string)$deposits[$i]->fullName;
     $lastSpace = strrpos($name, " ");
-    $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
+    $lastName = substr($name, $lastSpace + 1);
+    $finalName = array(" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", );
+    for($n=0; $n < strlen($lastName); $n++) {
+        $finalName[$n] = substr($lastName, $n, 1);
+    }
+
+
+
     if ((string)$deposits[$i]->onOffTrack == "OFF_TRACK") {
         $status = "DELAYED";
     } else if ((string)$deposits[$i]->onOffTrack == "ON_TRACK") {
@@ -56,7 +63,18 @@ for($i = 0; $i < 3; $i++)
         $status = "PENDING";
     }
     $chart = array(
-        "NAME" => $abbName,
+        "NAME0" => substr($name, 0, 1),
+        "NAME1" => ".",
+        "NAME2" => $finalName[0],
+        "NAME3" => $finalName[1],
+        "NAME4" => $finalName[2],
+        "NAME5" => $finalName[3],
+        "NAME6" => $finalName[4],
+        "NAME7" => $finalName[5],
+        "NAME8" => $finalName[6],
+        "NAME9" => $finalName[7],
+        "NAME10" => $finalName[8],
+        "NAME11" => $finalName[9],
         "DESTINATION" => (string)$deposits[$i]->goalName,
         "TRIP_DIST0" => $finalDists[0],
         "TRIP_DIST1" => $finalDists[1],
@@ -133,9 +151,16 @@ for($i = 0; $i < 3; $i++)
     }
 
 
-    $name = (string)$withdrawals[$i]->fullName;
+    // get characters for name
+    $name = (string)$deposits[$i]->fullName;
     $lastSpace = strrpos($name, " ");
-    $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
+    $lastName = substr($name, $lastSpace + 1);
+    $finalName = array(" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", );
+    for($n=0; $n < strlen($lastName); $n++) {
+        $finalName[$n] = substr($lastName, $n, 1);
+    }
+
+
     if ((string)$withdrawals[$i]->onOffTrack == "OFF_TRACK") {
         $status = "DELAYED";
     } else if ((string)$withdrawals[$i]->onOffTrack == "ON_TRACK") {
@@ -146,7 +171,18 @@ for($i = 0; $i < 3; $i++)
         $status = "PENDING";
     }
     $chart = array(
-        "NAME" => $abbName,
+        "NAME0" => substr($name, 0, 1),
+        "NAME1" => ".",
+        "NAME2" => $finalName[0],
+        "NAME3" => $finalName[1],
+        "NAME4" => $finalName[2],
+        "NAME5" => $finalName[3],
+        "NAME6" => $finalName[4],
+        "NAME7" => $finalName[5],
+        "NAME8" => $finalName[6],
+        "NAME9" => $finalName[7],
+        "NAME10" => $finalName[8],
+        "NAME11" => $finalName[9],
         "DESTINATION" => (string)$withdrawals[$i]->goalName,
         "TRIP_DIST0" => $finalDists[0],
         "TRIP_DIST1" => $finalDists[1],
@@ -222,12 +258,29 @@ for($i = 0; $i < 3; $i++)
         $prog = floor($prog/10);
     }
 
-
-    $name = (string)$goals[$i]->fullName;
+    // get characters for name
+    $name = (string)$deposits[$i]->fullName;
     $lastSpace = strrpos($name, " ");
-    $abbName = substr($name, 0, 1) . ". " . substr($name, $lastSpace + 1);
+    $lastName = substr($name, $lastSpace + 1);
+    $finalName = array(" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", );
+    for($n=0; $n < strlen($lastName); $n++) {
+        $finalName[$n] = substr($lastName, $n, 1);
+    }
+
+    
     $chart = array(
-        "NAME" => $abbName,
+        "NAME0" => substr($name, 0, 1),
+        "NAME1" => ".",
+        "NAME2" => $finalName[0],
+        "NAME3" => $finalName[1],
+        "NAME4" => $finalName[2],
+        "NAME5" => $finalName[3],
+        "NAME6" => $finalName[4],
+        "NAME7" => $finalName[5],
+        "NAME8" => $finalName[6],
+        "NAME9" => $finalName[7],
+        "NAME10" => $finalName[8],
+        "NAME11" => $finalName[9],
         "DESTINATION" => (string)$goals[$i]->goalName,
         "TRIP_DIST0" => $finalDists[0],
         "TRIP_DIST1" => $finalDists[1],
