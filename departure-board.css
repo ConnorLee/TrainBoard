@@ -17,7 +17,7 @@ body{
 table {
     padding:  0.36em;
     display: inline-block;
-	line-height: 1.3em;
+	line-height: 1em;
     background: rgb(30, 30, 30);
     -webkit-border-radius: 0.21em;
     -moz-border-radius: 0.21em;
@@ -28,12 +28,11 @@ table {
 	width: 100%;
 }
 
-
 .departure-board span.letter {
 	display: inline-block;
 	width: 1em;
 	margin: 0 .1em;
-	height: 1.3em;
+	height: 1em;
 	text-align: center;
 	position: relative;
 }
@@ -77,8 +76,8 @@ table {
 	position: relative;
 	width: 100%;
 	left: 0;
-	top: .62em;
-	content: " ";
+/*	top: .62em;
+*/	content: " ";
 	display: block;
 	z-index: 2;
 	-moz-transform: translate(0, -.05em);
@@ -111,14 +110,14 @@ table {
 
 
 .departure-board span.bottom {
-	top: .65em;
-}
+/*	top: .65em;
+*/}
 
 
 .departure-board span.bottom span.text {
 	position: relative;
-	top: -.65em;
-}
+/*	top: -.65em;
+*/}
 
 
 
@@ -166,13 +165,15 @@ h2{
  font-family: 'Times';
  font-size: 20px;    
  background-color: #1e1e1e;
-
-
 }
 
 thead{
 	font-family: "Times New Roman", 'Helvetica';
 	   letter-spacing: .1em;
+}
+
+.NAME1 {
+
 }
 
 #title1{
@@ -181,13 +182,24 @@ text-align: center;
   font-size: 50px;
 }
 
+p {
+display: block;
+	vertical-align: middle;
+
+
+}
+
+.panel .front {
+text-align: center;
+}
+
 tr th{
-	padding-bottom: -50%;
-	padding-top: -50%;
+	/*padding-bottom: -20% !important;
+	padding-top: -20% !important;*/
 	font-family: 'Times';
 }
 
-td {
+.click.panel.square {
     padding:  5px 5px;
     display: inline-block;
     background: rgb(30, 30, 30);
@@ -228,7 +240,7 @@ td {
       inset -2px 0px 4px rgba(0,0,0,0.9), 
       0 1px 0px rgba(255,255,255,0.2);
 }
-td:before {
+.click.panel.square:before {
     /* approximation for old browsers */
     border-top: 1px solid rgb(30, 30, 30);
     border-top: 1px solid rgba(0,0,0,0.4);
@@ -237,7 +249,7 @@ td:before {
     width: 110%;
     position: relative;
     left: -9px;
-    top: 11px;
+    top: 50%;
     content: " ";
     display: block;
 }
