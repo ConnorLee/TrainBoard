@@ -2,6 +2,17 @@ body{
 	background-color: #000000;
 }
 
+#d{
+	color: green;
+	font-weight: bolder;
+}
+#w{
+	color: red;
+		font-weight: bolder;
+}
+#g{
+	color: #6389bd;
+}
 
 table {
     padding:  0.36em;
@@ -142,20 +153,39 @@ table {
 h1{
    margin-bottom: .5%;
    letter-spacing: .15em;
-  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-  color: white;
+font-family: 'Times New Roman'; 
+color: white;
 }
+h2{
+   letter-spacing: .15em;
+  color: white;
+  font-family: 'Arial';
+ text-align: center;
+ margin-top: -.5%;
+ margin-bottom: -.5%;
+ font-family: 'Times';
+ font-size: 20px;    
+ background-color: #1e1e1e;
+
+
+}
+
 thead{
 	font-family: "Times New Roman", 'Helvetica';
 	   letter-spacing: .1em;
-
-
 }
 
 #title1{
 text-align: center;
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+  font-size: 50px;
+
 }
 
+th{
+	margin-bottom: -50%;
+	margin-top: -50%;
+}
 
 td {
     padding:  5px 10px;

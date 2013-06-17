@@ -1012,7 +1012,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1334,7 +1334,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1656,7 +1656,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1978,7 +1978,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -2300,7 +2300,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -2622,7 +2622,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>

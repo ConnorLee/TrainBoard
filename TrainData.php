@@ -115,9 +115,9 @@ for($i = 0; $i < 3; $i++)
     }
 
     // get digits for miles change
-    $mile = round($withdrawals[$i]->amount);
+    $mile = round(abs($withdrawals[$i]->amount));
     $finalMiles = array(" ", " ", " ", " ", " ", " ", " ", " ");
-    $numDigMile = strlen((string)round($withdrawals[$i]->amount));
+    $numDigMile = strlen(round(abs($withdrawals[$i]->amount)));
     for($j = 7; $j > (7 - $numDigMile); $j--) {
         $finalMiles[$j] = (string)($mile % 10);
         $mile = floor($mile/10);
@@ -216,7 +216,7 @@ for($i = 0; $i < 3; $i++)
     // get digits for progress
     $prog = (round($goals[$i]->balance) + round($goals[$i]->amount));
     $finalProgs = array(" ", " ", " ", " ", " ", " ", " ", " ");
-    $numDigProg = strlen((string)(round($goals[$i]->balance) + round($goals[$i]->amount)));
+    $numDigProg = strlen((string)(round($goals[$i]->balance) + round($go[$i]->amount)));
     for($j = 7; $j > (7 - $numDigProg); $j--) {
         $finalProgs[$j] = (string)($prog % 10);
         $prog = floor($prog/10);
