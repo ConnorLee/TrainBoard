@@ -3,16 +3,11 @@
 		<title>JavaScript/CSS3 Departure Board</title>
 		<link rel="stylesheet" href="departure-board.css" />
 		<link rel="stylesheet" href="flip.css" />
-
-		<!-- IMPORT SCRIPT HERE -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
-		</script>
-
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	</head>
 
 	<body>
 		<h1 id="title1">ALL ABOARD BETTERMENT</h1>
-
 		<div id="placeholder"></div>
     	
         <table id='table'>
@@ -3932,19 +3927,49 @@
 			</tr>
 		</table>
 
-<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
+
+var snd = new Audio("flipflap.mp3");
 
 setInterval(function(){ 
 
 	$.getJSON('TrainData.php', function(data) {
 
+	var depname0 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME0').html();
+	var newdepname0 = data.TransObject[0]["NAME0"];
+	var depname2 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME2').html();
+	var newdepname2 = data.TransObject[0]["NAME2"];
+	var depname3 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME3').html();
+	var newdepname3 = data.TransObject[0]["NAME3"];
+	var withname0 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME0').html();
+	var newwithname0 = data.TransObject[3]["NAME0"];
+	var withname2 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME2').html();
+	var newwithname2 = data.TransObject[3]["NAME2"];
+	var withname3 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME3').html();
+	var newwithname3 = data.TransObject[3]["NAME3"];
+	var goalname0 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME0').html();
+	var newgoalname0 = data.TransObject[6]["NAME0"];
+	var goalname2 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME2').html();
+	var newgoalname2 = data.TransObject[6]["NAME2"];
+	var goalname3 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME3').html();
+	var newgoalname3 = data.TransObject[6]["NAME3"];
+	var sound = false;
+	if ((depname0 != newdepname0) || (depname2 != newdepname2) || (depname3 != newdepname3) || 
+		(withname0 != newwithname0) || (withname2 != newwithname2) || (withname3 != newwithname3) ||
+		(goalname0 != newgoalname0) || (goalname2 != newgoalname2) || (goalname3 != newgoalname3)) {
+		sound = true;
+	}
+
+	if (sound == true) {
+		snd.play();
+	}
 
 	for (var i in data.TransObject) {
 
 		var rowData = data.TransObject[i];
 	
 		for(var k in rowData){
+
 			var $pToUpdate = $(rowData["selector"] + ' p.' + k);
 
 			// setting the value of rowData's k into the selector for that k
@@ -3952,7 +3977,6 @@ setInterval(function(){
 
 		 	if(old != rowData[k]){
 				$pToUpdate.html(rowData[k]); // definitely works
-				// setTimeout(function(){
 				$pToUpdate.parent().parent().toggleClass('flip');
 
 			}
@@ -3961,6 +3985,7 @@ setInterval(function(){
 	}
 	});
 }, 10000);
+
 
 </script>
 
