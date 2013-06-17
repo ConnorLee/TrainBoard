@@ -2,7 +2,6 @@
 	<head>
 		<title>JavaScript/CSS3 Departure Board</title>
 		<link rel="stylesheet" href="departure-board.css" />
-		<link rel="stylesheet" href="flip.css" />
 
 		<!-- IMPORT SCRIPT HERE -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
@@ -18,7 +17,6 @@
         <table id='table'>
         	<tr>
         			<th>TYPE</th>
-        		
         		
         			<th colspan = "12">NAME</th>
         	
