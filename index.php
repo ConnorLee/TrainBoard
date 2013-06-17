@@ -16,7 +16,7 @@
 		<div id="placeholder"></div>
     	
         <table id='table'>
-<!--         	<tr>
+        	<tr>
         		<td>
         			<h2>TYPE</h2>
         		</td>
@@ -26,22 +26,22 @@
         		<td>
         			<h2>DESTINATION</h2>
         		</td>
-        		<td>
+        		<td colspan = "8">
         			<h2>TRIP DISTANCE</h2>
         		</td>
-        		<td>
+        		<td colspan = "4">
         			<h2>DURATION</h2>
         		</td>
-        		<td>
+        		<td colspan = "8">
         			<h2>MILES CHANGE</h2>
         		</td>
-        		<td>
+        		<td colspan = "8">
         			<h2>PROGRESS</h2>
         		</td>
         		<td>
         			<h2>STATUS</h2>
         		</td>
-        	</tr> -->
+        	</tr>
 			<tr class='deposit0'>
 				<td>
 					<div class='click panel square'>
@@ -1012,7 +1012,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1334,7 +1334,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1656,7 +1656,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1978,7 +1978,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -2300,7 +2300,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -2622,7 +2622,7 @@
 				<td>
 					<div class='click panel square'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>
