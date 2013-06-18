@@ -16,34 +16,25 @@
     	
         <table id='table'>
         	<tr>
-        		<td>
-        			<h2>TYPE</h2>
-        		</td>
-        		<td colspan = "12">
-        			<h2>NAME</h2>
-        		</td>
-        		<td>
-        			<h2>DESTINATION</h2>
-        		</td>
-        		<td colspan = "8">
-        			<h2>TRIP DISTANCE</h2>
-        		</td>
-        		<td colspan = "4">
-        			<h2>DURATION</h2>
-        		</td>
-        		<td colspan = "8">
-        			<h2>MILES CHANGE</h2>
-        		</td>
-        		<td colspan = "8">
-        			<h2>PROGRESS</h2>
-        		</td>
-        		<td>
-        			<h2>STATUS</h2>
-        		</td>
+        			<th>TYPE</th>
+       	
+        			<th colspan = "12">NAME</th>
+        	
+        			<th>DESTINATION</th>
+        		
+        			<th colspan = "8">TRIP DISTANCE</th>
+        		
+        			<th colspan = "4">DURATION</th>
+        		
+        			<th colspan = "8">MILES CHANGE</th>
+        		
+        			<th colspan = "8">PROGRESS</th>
+        		
+        			<th>STATUS</th>
         	</tr>
 			<tr class='deposit0'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="d">D</p>
 						</div>
@@ -173,7 +164,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -463,7 +454,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -475,7 +466,7 @@
 			</tr>
 			<tr class='deposit1'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="d">D</p>
 						</div>
@@ -605,7 +596,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -895,7 +886,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -907,7 +898,7 @@
 			</tr>
 			<tr class='deposit2'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="d">D</p>
 						</div>
@@ -1037,7 +1028,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -1327,7 +1318,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -1339,7 +1330,7 @@
 			</tr>
 			<tr class='withdrawal0'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="w">W</p>
 						</div>
@@ -1469,7 +1460,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -1759,7 +1750,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -1771,7 +1762,7 @@
 			</tr>
 			<tr class='withdrawal1'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="w">W</p>
 						</div>
@@ -1901,7 +1892,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -2191,7 +2182,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -2203,7 +2194,7 @@
 			</tr>
 			<tr class='withdrawal2'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="w">W</p>
 						</div>
@@ -2333,7 +2324,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -2623,7 +2614,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -2635,7 +2626,7 @@
 			</tr>
 			<tr class='goal0'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="g">G</p>
 						</div>
@@ -2765,7 +2756,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -3055,7 +3046,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -3067,7 +3058,7 @@
 			</tr>
 			<tr class='goal1'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="g">G</p>
 						</div>
@@ -3197,7 +3188,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -3487,7 +3478,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -3499,7 +3490,7 @@
 			</tr>
 			<tr class='goal2'>
 				<td>
-					<div class='panel'>
+					<div class='type panel'>
 						<div class='front'>
 							<p id="g">G</p>
 						</div>
@@ -3629,7 +3620,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='dest panel'>
 						<div class='front'>
 							<p class='DESTINATION'> dest </p>
 						</div>
@@ -3919,7 +3910,7 @@
 					</div>
 				</td>
 				<td>
-					<div class='panel'>
+					<div class='status panel'>
 						<div class='front'>
 							<p class='STATUS'> status </p>
 						</div>
@@ -3934,32 +3925,116 @@
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
 
+var snd = new Audio("flipflap.mp3");
+	var categories = new Array(
+		"NAME0",
+        "NAME1",
+        "NAME2",
+        "NAME3",
+        "NAME4",
+        "NAME5",
+        "NAME6",
+        "NAME7",
+        "NAME8",
+        "NAME9",
+        "NAME10",
+        "NAME11",
+        "DESTINATION",
+        "TRIP_DIST0",
+        "TRIP_DIST1",
+        "TRIP_DIST2",
+        "TRIP_DIST3",
+        "TRIP_DIST4",
+        "TRIP_DIST5",
+        "TRIP_DIST6",
+        "TRIP_DIST7",
+        "DURATION0",
+        "DURATION1",
+        "DURATION2",
+        "DURATION3",
+        "MILES_CHANGE0",
+        "MILES_CHANGE1",
+        "MILES_CHANGE2",
+        "MILES_CHANGE3",
+        "MILES_CHANGE4",
+        "MILES_CHANGE5",
+        "MILES_CHANGE6",
+        "MILES_CHANGE7",
+        "PROGRESS0",
+        "PROGRESS1",
+        "PROGRESS2",
+        "PROGRESS3",
+        "PROGRESS4",
+        "PROGRESS5",
+        "PROGRESS6",
+        "PROGRESS7",
+        "STATUS",
+        "selector");
+	
+
 setInterval(function(){ 
 
 	$.getJSON('TrainData.php', function(data) {
 
+	var depname0 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME0').html();
+	var newdepname0 = data.TransObject[0]["NAME0"];
+	var depname2 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME2').html();
+	var newdepname2 = data.TransObject[0]["NAME2"];
+	var depname3 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME3').html();
+	var newdepname3 = data.TransObject[0]["NAME3"];
+	var withname0 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME0').html();
+	var newwithname0 = data.TransObject[3]["NAME0"];
+	var withname2 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME2').html();
+	var newwithname2 = data.TransObject[3]["NAME2"];
+	var withname3 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME3').html();
+	var newwithname3 = data.TransObject[3]["NAME3"];
+	var goalname0 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME0').html();
+	var newgoalname0 = data.TransObject[6]["NAME0"];
+	var goalname2 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME2').html();
+	var newgoalname2 = data.TransObject[6]["NAME2"];
+	var goalname3 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME3').html();
+	var newgoalname3 = data.TransObject[6]["NAME3"];
+	if ((depname0 != newdepname0) || (depname2 != newdepname2) || (depname3 != newdepname3) || 
+		(withname0 != newwithname0) || (withname2 != newwithname2) || (withname3 != newwithname3) ||
+		(goalname0 != newgoalname0) || (goalname2 != newgoalname2) || (goalname3 != newgoalname3)) {
+		snd.play();
+	}
 
-	for (var i in data.TransObject) {
+	var i = 0;
+	var k = 0;
+
+	var interv = setInterval(function() {
 
 		var rowData = data.TransObject[i];
 
-		for(var k in rowData){
-			var $pToUpdate = $(rowData["selector"] + ' p.' + k);
+		var $pToUpdate = $(rowData["selector"] + ' p.' + categories[k]);
 
-			// setting the value of rowData's k into the selector for that k
-			var old = $pToUpdate.html();
+		// setting the value of rowData's k into the selector for that k
+		var old = $pToUpdate.html();
 
-		 	if(old != rowData[k]){
-				$pToUpdate.html(rowData[k]); // definitely works
-				// setTimeout(function(){
-				$pToUpdate.parent().parent().toggleClass('flip');
-
-			}
-
+			
+		if(old != rowData[categories[k]]){
+			$pToUpdate.html(rowData[categories[k]]); // definitely works
+			$pToUpdate.parent().parent().toggleClass('flip');
 		}
-	}
+		k++;
+		if (k == 43) {
+			k = 0;
+			i++;
+		}
+		if (i == 9) {
+			clearInterval(interv);
+		}
+		//console.log("i = " + i);
+		//console.log("k = " + k);
+
+	}, 2);
+	i = 0;
+	k = 0;
+		
 	});
-}, 10000);
+}, 20000);
+
 
 </script>
 
