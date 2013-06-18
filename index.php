@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>JavaScript/CSS3 Departure Board</title>
-		<link rel="stylesheet" href="departure-board.css" />
+		<link rel="stylesheet" href="departureboard2.css" />
 
 		<!-- IMPORT SCRIPT HERE -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
@@ -24,9 +24,9 @@
         		
         			<th colspan = "8">TRIP DISTANCE</th>
         		
-        			<th id = "duration" colspan = "4">DURATION</th>
+        			<th colspan = "4">DURATION</th>
         		
-        			<th id = "miles" colspan = "8">MILES CHANGE</th>
+        			<th colspan = "8">MILES CHANGE</th>
         		
         			<th colspan = "8">PROGRESS</th>
         		
@@ -1332,7 +1332,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="w">&#8855;	</p>
+							<p id="w">&#8855;</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1764,7 +1764,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="w">&#8855;	</p>
+							<p id="w">&#8855;</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -3925,32 +3925,155 @@
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
 
+var snd3 = new Audio("flipflap8.mp3");
+var snd6 = new Audio("flipflap16.mp3");
+var snd9 = new Audio("flipflap24.mp3");
+	var categories = new Array(
+		"NAME0",
+        "NAME1",
+        "NAME2",
+        "NAME3",
+        "NAME4",
+        "NAME5",
+        "NAME6",
+        "NAME7",
+        "NAME8",
+        "NAME9",
+        "NAME10",
+        "NAME11",
+        "DESTINATION",
+        "TRIP_DIST0",
+        "TRIP_DIST1",
+        "TRIP_DIST2",
+        "TRIP_DIST3",
+        "TRIP_DIST4",
+        "TRIP_DIST5",
+        "TRIP_DIST6",
+        "TRIP_DIST7",
+        "DURATION0",
+        "DURATION1",
+        "DURATION2",
+        "DURATION3",
+        "MILES_CHANGE0",
+        "MILES_CHANGE1",
+        "MILES_CHANGE2",
+        "MILES_CHANGE3",
+        "MILES_CHANGE4",
+        "MILES_CHANGE5",
+        "MILES_CHANGE6",
+        "MILES_CHANGE7",
+        "PROGRESS0",
+        "PROGRESS1",
+        "PROGRESS2",
+        "PROGRESS3",
+        "PROGRESS4",
+        "PROGRESS5",
+        "PROGRESS6",
+        "PROGRESS7",
+        "STATUS",
+        "selector");
+
+	function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+	
+
 setInterval(function(){ 
+	shuffleArray(categories);
 
 	$.getJSON('TrainData.php', function(data) {
 
+	var depChange = false;
+	var withChange = false;
+	var goalChange = false;
 
-	for (var i in data.TransObject) {
+	var depname0 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME0').html();
+	var newdepname0 = data.TransObject[0]["NAME0"];
+	var depname2 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME2').html();
+	var newdepname2 = data.TransObject[0]["NAME2"];
+	var depname3 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME3').html();
+	var newdepname3 = data.TransObject[0]["NAME3"];
+	var withname0 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME0').html();
+	var newwithname0 = data.TransObject[3]["NAME0"];
+	var withname2 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME2').html();
+	var newwithname2 = data.TransObject[3]["NAME2"];
+	var withname3 = $(data.TransObject[3]["selector"] + ' p.' + 'NAME3').html();
+	var newwithname3 = data.TransObject[3]["NAME3"];
+	var goalname0 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME0').html();
+	var newgoalname0 = data.TransObject[6]["NAME0"];
+	var goalname2 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME2').html();
+	var newgoalname2 = data.TransObject[6]["NAME2"];
+	var goalname3 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME3').html();
+	var newgoalname3 = data.TransObject[6]["NAME3"];
+	if ((depname0 != newdepname0) || (depname2 != newdepname2) || (depname3 != newdepname3)) {
+		depChange = true;
+	}
+	if ((withname0 != newwithname0) || (withname2 != newwithname2) || (withname3 != newwithname3)) {
+		withChange = true;
+	}
+	if ((goalname0 != newgoalname0) || (goalname2 != newgoalname2) || (goalname3 != newgoalname3)) {
+		goalChange = true;
+	}
+	var threeChange = false;
+	var sixChange = false;
+	var nineChange = false;
+	if ((depChange) && (withChange) && (goalChange)) {
+		nineChange = true;
+	} else if ((depChange && withChange) || (depChange && goalChange) || (withChange && goalChange)) {
+		sixChange = true;
+	} else if ((depChange) || (withChange) || (goalChange)) {
+		threeChange = true;
+	}
+
+	if (nineChange) {
+		snd9.play();
+	} else if (sixChange) {
+		snd6.play();
+	} else if (threeChange) {
+		snd3.play(); 
+	}
+
+	var i = 0;
+	var k = 0;
+
+	var interv = setInterval(function() {
 
 		var rowData = data.TransObject[i];
 
-		for(var k in rowData){
-			var $pToUpdate = $(rowData["selector"] + ' p.' + k);
+		var $pToUpdate = $(rowData["selector"] + ' p.' + categories[k]);
 
-			// setting the value of rowData's k into the selector for that k
-			var old = $pToUpdate.html();
+		// setting the value of rowData's k into the selector for that k
+		var old = $pToUpdate.html();
 
-		 	if(old != rowData[k]){
-				$pToUpdate.html(rowData[k]); // definitely works
-				// setTimeout(function(){
-				$pToUpdate.parent().parent().toggleClass('flip');
-
-			}
-
+			
+		if(old != rowData[categories[k]]){
+			$pToUpdate.html(rowData[categories[k]]); // definitely works
+			$pToUpdate.parent().parent().toggleClass('flip');
 		}
-	}
+		k++;
+		if (k == 43) {
+			k = 0;
+			i++;
+		}
+		if (i == 9) {
+			clearInterval(interv);
+		}
+		//console.log("i = " + i);
+		//console.log("k = " + k);
+
+	}, Math.floor((Math.random()*10)+1));
+	i = 0;
+	k = 0;
+		
 	});
-}, 10000);
+}, 30000);
+
 
 </script>
 
