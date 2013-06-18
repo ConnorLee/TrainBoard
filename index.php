@@ -4035,8 +4035,8 @@ setInterval(function(){
 		snd9.play();
 	} else if (sixChange) {
 		snd6.play();
-	} else  if (threeChange) {
-		snd9.play();
+	} else if (threeChange) {
+		snd3.play();
 	}
 
 	var i = 0;
