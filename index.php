@@ -4023,11 +4023,11 @@ setInterval(function(){
 	var threeChange = false;
 	var sixChange = false;
 	var nineChange = false;
-	if (depChange && withChange && goalChange) {
+	if ((depChange) && (withChange) && (goalChange)) {
 		nineChange = true;
 	} else if ((depChange && withChange) || (depChange && goalChange) || (withChange && goalChange)) {
 		sixChange = true;
-	} else if (depChange || withChange || goalChange) {
+	} else if ((depChange) || (withChange) || (goalChange)) {
 		threeChange = true;
 	}
 
@@ -4036,7 +4036,7 @@ setInterval(function(){
 	} else if (sixChange) {
 		snd6.play();
 	} else if (threeChange) {
-		snd3.play();
+		snd3.play(); 
 	}
 
 	var i = 0;
@@ -4072,7 +4072,7 @@ setInterval(function(){
 	k = 0;
 		
 	});
-}, 20000);
+}, 30000);
 
 
 </script>
