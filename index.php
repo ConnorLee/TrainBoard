@@ -2,39 +2,35 @@
 	<head>
 		<title>JavaScript/CSS3 Departure Board</title>
 		<link rel="stylesheet" href="departure-board.css" />
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+		<!-- IMPORT SCRIPT HERE -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+		</script>
+
 	</head>
 
 	<body>
 		<h1 id="title1">ALL ABOARD BETTERMENT</h1>
+
 		<div id="placeholder"></div>
     	
         <table id='table'>
         	<tr>
-        		<td>
-        			<h2>TYPE</h2>
-        		</td>
-        		<td colspan = "12">
-        			<h2>NAME</h2>
-        		</td>
-        		<td>
-        			<h2>DESTINATION</h2>
-        		</td>
-        		<td colspan = "8">
-        			<h2>TRIP DISTANCE</h2>
-        		</td>
-        		<td colspan = "4">
-        			<h2>DURATION</h2>
-        		</td>
-        		<td colspan = "8">
-        			<h2>MILES CHANGE</h2>
-        		</td>
-        		<td colspan = "8">
-        			<h2>PROGRESS</h2>
-        		</td>
-        		<td>
-        			<h2>STATUS</h2>
-        		</td>
+        			<th>TYPE</th>
+       	
+        			<th colspan = "12">NAME</th>
+        	
+        			<th>DESTINATION</th>
+        		
+        			<th colspan = "8">TRIP DISTANCE</th>
+        		
+        			<th colspan = "4">DURATION</th>
+        		
+        			<th colspan = "8">MILES CHANGE</th>
+        		
+        			<th colspan = "8">PROGRESS</th>
+        		
+        			<th>STATUS</th>
         	</tr>
 			<tr class='deposit0'>
 				<td>
@@ -3926,9 +3922,12 @@
 			</tr>
 		</table>
 
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
 
-var snd = new Audio("flipflap.mp3");
+var snd3 = new Audio("flipflap8.mp3");
+var snd6 = new Audio("flipflap16.mp3");
+var snd9 = new Audio("flipflap24.mp3");
 	var categories = new Array(
 		"NAME0",
         "NAME1",
@@ -3973,11 +3972,26 @@ var snd = new Audio("flipflap.mp3");
         "PROGRESS7",
         "STATUS",
         "selector");
-	console.log(categories.length);
+
+	function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+	
 
 setInterval(function(){ 
+	shuffleArray(categories);
 
 	$.getJSON('TrainData.php', function(data) {
+
+	var depChange = false;
+	var withChange = false;
+	var goalChange = false;
 
 	var depname0 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME0').html();
 	var newdepname0 = data.TransObject[0]["NAME0"];
@@ -3997,23 +4011,38 @@ setInterval(function(){
 	var newgoalname2 = data.TransObject[6]["NAME2"];
 	var goalname3 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME3').html();
 	var newgoalname3 = data.TransObject[6]["NAME3"];
-	if ((depname0 != newdepname0) || (depname2 != newdepname2) || (depname3 != newdepname3) || 
-		(withname0 != newwithname0) || (withname2 != newwithname2) || (withname3 != newwithname3) ||
-		(goalname0 != newgoalname0) || (goalname2 != newgoalname2) || (goalname3 != newgoalname3)) {
-		snd.play();
+	if ((depname0 != newdepname0) || (depname2 != newdepname2) || (depname3 != newdepname3)) {
+		depChange = true;
+	}
+	if ((withname0 != newwithname0) || (withname2 != newwithname2) || (withname3 != newwithname3)) {
+		withChange = true;
+	}
+	if ((goalname0 != newgoalname0) || (goalname2 != newgoalname2) || (goalname3 != newgoalname3)) {
+		goalChange = true;
+	}
+	var threeChange = false;
+	var sixChange = false;
+	var nineChange = false;
+	if (depChange && withChange && goalChange) {
+		nineChange = true;
+	} else if ((depChange && withChange) || (depChange && goalChange) || (withChange && goalChange)) {
+		sixChange = true;
+	} else if (depChange || withChange || goalChange) {
+		threeChange = true;
+	}
+
+	if (nineChange) {
+		snd9.play();
+	} else if (sixChange) {
+		snd6.play();
+	} else  if (threeChange) {
+		snd9.play();
 	}
 
 	var i = 0;
 	var k = 0;
 
-	setInterval(function() {
-		if (k == 43) {
-			k = 0;
-			i++;
-		}
-		if (i == 9) {
-			clearInterval();
-		}
+	var interv = setInterval(function() {
 
 		var rowData = data.TransObject[i];
 
@@ -4023,13 +4052,24 @@ setInterval(function(){
 		var old = $pToUpdate.html();
 
 			
-		if(old != rowData[k]){
-			$pToUpdate.html(rowData[k]); // definitely works
+		if(old != rowData[categories[k]]){
+			$pToUpdate.html(rowData[categories[k]]); // definitely works
 			$pToUpdate.parent().parent().toggleClass('flip');
 		}
 		k++;
+		if (k == 43) {
+			k = 0;
+			i++;
+		}
+		if (i == 9) {
+			clearInterval(interv);
+		}
+		//console.log("i = " + i);
+		//console.log("k = " + k);
 
-	}, 5);
+	}, Math.floor((Math.random()*10)+1));
+	i = 0;
+	k = 0;
 		
 	});
 }, 20000);
