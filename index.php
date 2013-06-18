@@ -3925,7 +3925,9 @@
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script>
 
-var snd = new Audio("flipflap.mp3");
+var snd3 = new Audio("flipflap8.mp3");
+var snd6 = new Audio("flipflap16.mp3");
+var snd9 = new Audio("flipflap24.mp3");
 	var categories = new Array(
 		"NAME0",
         "NAME1",
@@ -3970,8 +3972,8 @@ var snd = new Audio("flipflap.mp3");
         "PROGRESS7",
         "STATUS",
         "selector");
-	
-function shuffleArray(array) {
+
+	function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         var temp = array[i];
@@ -3981,10 +3983,15 @@ function shuffleArray(array) {
     return array;
 }
 
+
 setInterval(function(){ 
 	shuffleArray(categories);
 
 	$.getJSON('TrainData.php', function(data) {
+
+	var depChange = false;
+	var withChange = false;
+	var goalChange = false;
 
 	var depname0 = $(data.TransObject[0]["selector"] + ' p.' + 'NAME0').html();
 	var newdepname0 = data.TransObject[0]["NAME0"];
@@ -4004,10 +4011,32 @@ setInterval(function(){
 	var newgoalname2 = data.TransObject[6]["NAME2"];
 	var goalname3 = $(data.TransObject[6]["selector"] + ' p.' + 'NAME3').html();
 	var newgoalname3 = data.TransObject[6]["NAME3"];
-	if ((depname0 != newdepname0) || (depname2 != newdepname2) || (depname3 != newdepname3) || 
-		(withname0 != newwithname0) || (withname2 != newwithname2) || (withname3 != newwithname3) ||
-		(goalname0 != newgoalname0) || (goalname2 != newgoalname2) || (goalname3 != newgoalname3)) {
-		snd.play();
+	if ((depname0 != newdepname0) || (depname2 != newdepname2) || (depname3 != newdepname3)) {
+		depChange = true;
+	}
+	if ((withname0 != newwithname0) || (withname2 != newwithname2) || (withname3 != newwithname3)) {
+		withChange = true;
+	}
+	if ((goalname0 != newgoalname0) || (goalname2 != newgoalname2) || (goalname3 != newgoalname3)) {
+		goalChange = true;
+	}
+	var threeChange = false;
+	var sixChange = false;
+	var nineChange = false;
+	if (depChange && withChange && goalChange) {
+		nineChange = true;
+	} else if ((depChange && withChange) || (depChange && goalChange) || (withChange && goalChange)) {
+		sixChange = true;
+	} else if (depChange || withChange || goalChange) {
+		threeChange = true;
+	}
+
+	if (nineChange) {
+		snd9.play();
+	} else if (sixChange) {
+		snd6.play();
+	} else  if (threeChange) {
+		snd9.play();
 	}
 
 	var i = 0;
@@ -4022,7 +4051,7 @@ setInterval(function(){
 		// setting the value of rowData's k into the selector for that k
 		var old = $pToUpdate.html();
 
-			
+
 		if(old != rowData[categories[k]]){
 			$pToUpdate.html(rowData[categories[k]]); // definitely works
 			$pToUpdate.parent().parent().toggleClass('flip');
@@ -4039,13 +4068,14 @@ setInterval(function(){
 		//console.log("k = " + k);
 
 	}, Math.floor((Math.random()*10)+1));
-
 	i = 0;
 	k = 0;
-		
+
 	});
 }, 20000);
 
+
 </script>
+
 	</body>
 </html>
