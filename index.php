@@ -3970,7 +3970,6 @@ var snd = new Audio("flipflap.mp3");
         "PROGRESS7",
         "STATUS",
         "selector");
-
 	
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -3981,7 +3980,6 @@ function shuffleArray(array) {
     }
     return array;
 }
-	
 
 setInterval(function(){ 
 	shuffleArray(categories);
@@ -4048,9 +4046,6 @@ setInterval(function(){
 	});
 }, 20000);
 
-
 </script>
-
-
 	</body>
 </html>
