@@ -3970,9 +3970,21 @@ var snd = new Audio("flipflap.mp3");
         "PROGRESS7",
         "STATUS",
         "selector");
+
+	
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
 	
 
 setInterval(function(){ 
+	shuffleArray(categories);
 
 	$.getJSON('TrainData.php', function(data) {
 
@@ -4028,7 +4040,8 @@ setInterval(function(){
 		//console.log("i = " + i);
 		//console.log("k = " + k);
 
-	}, 2);
+	}, Math.floor((Math.random()*10)+1));
+
 	i = 0;
 	k = 0;
 		
@@ -4037,6 +4050,7 @@ setInterval(function(){
 
 
 </script>
+
 
 	</body>
 </html>
