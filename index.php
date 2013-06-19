@@ -16,20 +16,13 @@
     	
         <table id='table'>
         	<tr>
-        			<th>TYPE</th>
-       	
-        			<th colspan = "12">NAME</th>
-        	
-        			<th>DESTINATION</th>
-        		
-        			<th colspan = "8">TRIP DISTANCE</th>
-        		
-        			<th colspan = "4">DURATION</th>
-        		
-        			<th colspan = "8">MILES CHANGE</th>
-        		
-        			<th colspan = "8">PROGRESS</th>
-        		
+        			<th>TYPE</th>       	
+        			<th colspan = "12">NAME</th>       	
+        			<th>DESTINATION</th>        		
+        			<th colspan = "8">TRIP DISTANCE</th>       		
+        			<th colspan = "4">DURATION</th>        		
+        			<th colspan = "8">MILES CHANGE</th>       		
+        			<th colspan = "8">PROGRESS</th>     		
         			<th>STATUS</th>
         	</tr>
 			<tr class='deposit0'>
@@ -53,7 +46,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME1'> a </p>
@@ -63,7 +56,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME2'> m </p>
@@ -73,7 +66,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME3'> e </p>
@@ -93,7 +86,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
@@ -113,7 +106,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME7'> e </p>
@@ -123,7 +116,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME8'> n </p>
@@ -133,7 +126,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME9'> a </p>
@@ -143,7 +136,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME10'> m </p>
@@ -2628,7 +2621,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="g">&#8730;</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -3060,7 +3053,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="g">&#8730;</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -3492,7 +3485,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="g">&#8730;</p>
+							<p id="g">G</p>
 						</div>
 						<div class='back'>
 							<p></p>
