@@ -340,6 +340,3 @@ $merged = array_merge($transactions, $mostRecentThreeGoals);
 echo "{\"TransObject\":" . json_encode($merged) . "}";
 
 ?>
-
-
-

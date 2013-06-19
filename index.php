@@ -1,8 +1,9 @@
 <html>
 	<head>
 		<title>JavaScript/CSS3 Departure Board</title>
-		<link rel="stylesheet" href="departureboard2.css" />
 
+		<link rel="stylesheet" href="departureboard.css" />
+		
 		<!-- IMPORT SCRIPT HERE -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 		</script>
