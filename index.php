@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>JavaScript/CSS3 Departure Board</title>
-		<link rel="stylesheet" href="departure-board.css" />
+		<link rel="stylesheet" href="departureboard.css" />
 
 		<!-- IMPORT SCRIPT HERE -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
@@ -16,27 +16,20 @@
     	
         <table id='table'>
         	<tr>
-        			<th>TYPE</th>
-       	
-        			<th colspan = "12">NAME</th>
-        	
-        			<th>DESTINATION</th>
-        		
-        			<th colspan = "8">TRIP DISTANCE</th>
-        		
-        			<th colspan = "4">DURATION</th>
-        		
-        			<th colspan = "8">MILES CHANGE</th>
-        		
-        			<th colspan = "8">PROGRESS</th>
-        		
+        			<th>TYPE</th>       	
+        			<th colspan = "12">NAME</th>       	
+        			<th>DESTINATION</th>        		
+        			<th colspan = "8">TRIP DISTANCE</th>       		
+        			<th colspan = "4">DURATION</th>        		
+        			<th colspan = "8">MILES CHANGE</th>       		
+        			<th colspan = "8">PROGRESS</th>     		
         			<th>STATUS</th>
         	</tr>
 			<tr class='deposit0'>
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="d">&#8853;</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -53,7 +46,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME1'> a </p>
@@ -63,7 +56,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME2'> m </p>
@@ -73,7 +66,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME3'> e </p>
@@ -93,7 +86,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
@@ -113,7 +106,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME7'> e </p>
@@ -123,7 +116,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME8'> n </p>
@@ -133,7 +126,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME9'> a </p>
@@ -143,7 +136,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME10'> m </p>
@@ -468,7 +461,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="d">&#8853;</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -900,7 +893,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="d">D</p>
+							<p id="d">&#8853;</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1332,7 +1325,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="w">W</p>
+							<p id="w">&#8855;</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1764,7 +1757,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="w">W</p>
+							<p id="w">&#8855;</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -2196,7 +2189,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="w">W</p>
+							<p id="w">&#8855;</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -3982,7 +3975,7 @@ var snd9 = new Audio("flipflap24.mp3");
     }
     return array;
 }
-
+	
 
 setInterval(function(){ 
 	shuffleArray(categories);
@@ -4023,11 +4016,11 @@ setInterval(function(){
 	var threeChange = false;
 	var sixChange = false;
 	var nineChange = false;
-	if (depChange && withChange && goalChange) {
+	if ((depChange) && (withChange) && (goalChange)) {
 		nineChange = true;
 	} else if ((depChange && withChange) || (depChange && goalChange) || (withChange && goalChange)) {
 		sixChange = true;
-	} else if (depChange || withChange || goalChange) {
+	} else if ((depChange) || (withChange) || (goalChange)) {
 		threeChange = true;
 	}
 
@@ -4035,8 +4028,8 @@ setInterval(function(){
 		snd9.play();
 	} else if (sixChange) {
 		snd6.play();
-	} else  if (threeChange) {
-		snd9.play();
+	} else if (threeChange) {
+		snd3.play(); 
 	}
 
 	var i = 0;
@@ -4051,7 +4044,7 @@ setInterval(function(){
 		// setting the value of rowData's k into the selector for that k
 		var old = $pToUpdate.html();
 
-
+			
 		if(old != rowData[categories[k]]){
 			$pToUpdate.html(rowData[categories[k]]); // definitely works
 			$pToUpdate.parent().parent().toggleClass('flip');
@@ -4070,9 +4063,9 @@ setInterval(function(){
 	}, Math.floor((Math.random()*10)+1));
 	i = 0;
 	k = 0;
-
+		
 	});
-}, 20000);
+}, 30000);
 
 
 </script>
