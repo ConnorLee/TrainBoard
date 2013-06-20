@@ -5,7 +5,6 @@
    <fundedUsers>20507</fundedUsers>
    <goals>
       <goal>
-<<<<<<< HEAD
          <fullName>Ment A Better</fullName>
          <goalName>Motorcycle</goalName>
          <goalAmount>500.00</goalAmount>
@@ -23,25 +22,6 @@
          <goalName>Hot Air Balloon</goalName>
          <goalAmount>30.00</goalAmount>
          <goalLength>100</goalLength>
-=======
-         <fullName>Lady Gaga</fullName>
-         <goalName>Lamborghini</goalName>
-         <goalAmount>300000.00</goalAmount>
-         <goalLength>8</goalLength>
-         <initDeposit>500.00</initDeposit>
-      </goal>
-      <goal>
-         <fullName>Julius Caesar</fullName>
-         <goalName>Life Insurance</goalName>
-         <goalAmount>300000.00</goalAmount>
-         <goalLength>28</goalLength>
-      </goal>
-      <goal>
-         <fullName>Oprah Winfrey</fullName>
-         <goalName>Roth IRA</goalName>
-         <goalAmount>500000.00</goalAmount>
-         <goalLength>38</goalLength>
->>>>>>> 3d04b5a833033f8a127ff793423b8966578899e3
       </goal>
       <goal>
          <fullName>Firstname M Lastname</fullName>
@@ -93,15 +73,15 @@
    </goals>
    <deposits>
       <deposit>
-         <fullName>Jon Stein</fullName>
+         <fullName>ment a better</fullName>
          <goalName>Just Save and Invest</goalName>
          <amount>10000.00</amount>
          <goalLength>20</goalLength>
          <description>Initial Deposit</description>
       </deposit>
       <deposit>
-         <fullName>Marilyn Manson</fullName>
-         <goalName>Plastic Surgery</goalName>
+         <fullName>Firstname a Lastname</fullName>
+         <goalName>funds</goalName>
          <amount>10000.00</amount>
          <balance>37392.98</balance>
          <onOffTrack>FINISHED</onOffTrack>
@@ -110,8 +90,8 @@
          <description>Deposit</description>
       </deposit>
       <deposit>
-         <fullName>Leonardo DiCaprio</fullName>
-         <goalName>Mansion</goalName>
+         <fullName>Firstname Lastname</fullName>
+         <goalName>House Down Payment</goalName>
          <amount>1000.00</amount>
          <balance>1520.47</balance>
          <onOffTrack>ON_TRACK</onOffTrack>
@@ -120,7 +100,7 @@
          <description>Deposit</description>
       </deposit>
       <deposit>
-         <fullName>Jigglypuff</fullName>
+         <fullName>Firstname Lastname</fullName>
          <goalName>Traditional IRA</goalName>
          <amount>2100.00</amount>
          <balance>0.00</balance>
@@ -188,8 +168,8 @@
    </deposits>
    <withdrawals>
       <withdrawal>
-         <fullName>Barack Obama</fullName>
-         <goalName>Yacht</goalName>
+         <fullName>Firstname A Lastname</fullName>
+         <goalName>Wedding</goalName>
          <amount>-1400.00</amount>
          <balance>2989.22</balance>
          <onOffTrack>OFF_TRACK</onOffTrack>
@@ -197,7 +177,7 @@
          <goalLength>3</goalLength>
       </withdrawal>
       <withdrawal>
-         <fullName>Charlie Sheen</fullName>
+         <fullName>Firstname Lastname</fullName>
          <goalName>Next Year's Taxes</goalName>
          <amount>-1000.00</amount>
          <balance>1058.45</balance>
@@ -206,8 +186,8 @@
          <goalLength>1</goalLength>
       </withdrawal>
       <withdrawal>
-         <fullName>John F. Kennedy</fullName>
-         <goalName>Build Wealth (LOL)</goalName>
+         <fullName>Firstname P Lastname</fullName>
+         <goalName>Build Wealth</goalName>
          <amount>-1200.00</amount>
          <balance>1252.12</balance>
          <onOffTrack>ON_TRACK</onOffTrack>

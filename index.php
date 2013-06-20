@@ -1,9 +1,8 @@
 <html>
 	<head>
 		<title>JavaScript/CSS3 Departure Board</title>
-
 		<link rel="stylesheet" href="departureboard.css" />
-		
+
 		<!-- IMPORT SCRIPT HERE -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 		</script>
@@ -18,7 +17,7 @@
         <table id='table'>
         	<tr>
         			<th>TYPE</th>       	
-        			<th colspan = "12">NAME</th>       	
+        			<th colspan = "6">NAME</th>       	
         			<th>DESTINATION</th>        		
         			<th colspan = "8">TRIP DISTANCE</th>       		
         			<th colspan = "4">DURATION</th>        		
@@ -30,7 +29,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="d">&#8853;</p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -77,7 +76,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -91,66 +90,6 @@
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-				<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-				<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-				<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-				<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -462,7 +401,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="d">&#8853;</p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -509,7 +448,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -519,70 +458,10 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -894,7 +773,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="d">&#8853;</p>
+							<p id="d">D</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -941,7 +820,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -951,70 +830,10 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1326,7 +1145,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="w">&#8855;</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1373,7 +1192,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -1383,70 +1202,10 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1758,7 +1517,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="w">&#8855;</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -1805,7 +1564,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -1815,70 +1574,10 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -2190,7 +1889,7 @@
 				<td>
 					<div class='type panel'>
 						<div class='front'>
-							<p id="w">&#8855;</p>
+							<p id="w">W</p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -2237,7 +1936,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -2247,70 +1946,10 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -2669,7 +2308,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -2679,70 +2318,10 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -3101,7 +2680,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -3111,70 +2690,10 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -3533,7 +3052,7 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME4'> n </p>
@@ -3543,70 +3062,10 @@
 						</div>
 					</div>
 				</td>
-								<td>
+				<td>
 					<div class='panel'>
 						<div class='front'>
 							<p class='NAME5'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME6'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME7'> e </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME8'> n </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME9'> a </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME10'> m </p>
-						</div>
-						<div class='back'>
-							<p></p>
-						</div>
-					</div>
-				</td>
-								<td>
-					<div class='panel'>
-						<div class='front'>
-							<p class='NAME11'> e </p>
 						</div>
 						<div class='back'>
 							<p></p>
@@ -3929,12 +3388,6 @@ var snd9 = new Audio("flipflap24.mp3");
         "NAME3",
         "NAME4",
         "NAME5",
-        "NAME6",
-        "NAME7",
-        "NAME8",
-        "NAME9",
-        "NAME10",
-        "NAME11",
         "DESTINATION",
         "TRIP_DIST0",
         "TRIP_DIST1",
@@ -4066,7 +3519,7 @@ setInterval(function(){
 	k = 0;
 		
 	});
-}, 30000);
+}, 5000);
 
 
 </script>
