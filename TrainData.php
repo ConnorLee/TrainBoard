@@ -1,6 +1,6 @@
 <?php
-
-$xml = simplexml_load_file("dashboard.xml");
+//previously dashboard.xml
+$xml = simplexml_load_file('https://wwws.betterment.com/admin/Dashboard');
 
 // Most Recent 3 Deposits
 $deposits = $xml->children()->deposits->children();
